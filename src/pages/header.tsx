@@ -4,7 +4,7 @@ import Image from "next/image"
 export default function Header(){
 
   return (
-    <header className="flex flex-row text-base justify-between sticky px-4 lg:px-12 py-3 items-center z-20 bg-white shadow-lg">
+    <header className="flex flex-row text-base justify-between sticky px-4 lg:px-12 py-3 items-center z-20 bg-white">
       <Image src="/logo.svg" alt="Logo" width={130} height={100}/>
 
       <div className="font-poppins flex flex-row gap-6 lg:gap-8">

@@ -1,3 +1,4 @@
+import AboutUs from "@/pages/aboutUs";
 import Header from "@/pages/header";
 import Hero from "@/pages/hero";
 
@@ -10,6 +11,7 @@ export default function Home() {
         </div>
         <div className="pt-20 bg-slate-200">
           <Hero />
+          <AboutUs />
         </div>
       </div>
     </div>

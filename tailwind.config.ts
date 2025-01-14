@@ -20,7 +20,9 @@ module.exports = {
       backgroundImage: {
         'about-splash': "url('/splash_about.svg')",
         'about-splash_mobile': "url('/splash_about_mobile.svg')",
-        'gradient-sahra': 'linear-gradient(to right, #70A4BD, #1A4B5A)',
+        'gradient-to-r-primary': 'linear-gradient(to right,  #70A4BD,  #1A4B5A)',
+        'gradient-to-r-secondary': 'linear-gradient(to right, #70BD70, #126312)',
+        'gradient-to-r-tertiary': 'linear-gradient(to right, #FDB25F, #ED7C00)',
       },
       boxShadow: {
         glow: [

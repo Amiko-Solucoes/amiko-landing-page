@@ -21,9 +21,7 @@ export default function Partners(){
             loop: true,
           }}
           plugins={[
-            Autoplay({
-              delay: 2000,
-            }),
+            Autoplay({delay: 2000}),
           ]}
         >
           <CarouselContent>

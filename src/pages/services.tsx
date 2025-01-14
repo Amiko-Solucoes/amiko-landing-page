@@ -1,3 +1,5 @@
+import { ServiceCard } from "@/components/serviceCard";
+import { ServiceContent } from "@/components/serviceContent";
 import Image from "next/image";
 
 export default function Services(){
@@ -6,52 +8,53 @@ export default function Services(){
      <div className="bg-sky-900 flex flex-col items-center justify-center h-32">
         <span className="text-3xl text-white mb-4">Nossos Serviços</span>
         <div className="flex gap-10 ">
-          <div className="w-5 h-5 rounded-full bg-sky-400"></div>
-          <div className="w-5 h-5 rounded-full bg-green-500"></div>
-          <div className="w-5 h-5 rounded-full bg-orange-400"></div>
+          <div className="w-5 h-5 rounded-full bg-sky-400" />
+          <div className="w-5 h-5 rounded-full bg-green-500" />
+          <div className="w-5 h-5 rounded-full bg-orange-400" />
         </div>
       </div>
-      <div className="flex flex-col py-8 px-8 gap-8 justify-center items-center">
-        <div className="flex justify-center">
-          <Image src="/logo-sahra.svg" alt="" width={100} height={100}/>
+      <div className="flex flex-col py-8 px-8 gap-14 justify-center items-center">
+        <div id="sahra" className="flex flex-col gap-10 justify-center items-center">
+          <div className="flex justify-center">
+            <Image src="/logo-sahra.svg" alt="" width={100} height={100}/>
+          </div>
+          <div className="w-[80%] flex flex-col gap-10 justify-center items-center">
+            <ServiceContent variant="primary"/>
+            <Image src="/cover 1.svg" alt="" width={400} height={300}/>
+            <div className="flex flex-wrap items-center justify-center w-full gap-4">
+              <ServiceCard variant="primary" iconSrc="/sahra-card-1.svg" title="Equipe Otimizada" description="Apenas a equipe responsável por aquele tipo de solicitação receberá o chamado, evitando ocupar outras equipes com tarefas que não são de suas especialidades."/>
+              <ServiceCard variant="primary" iconSrc="/sahra-card-2.svg" title="Gestão Inteligente" description="Entregaremos dados assertivos e reais dos atendimentos, possibilitando a tomada de decisões embasadas pela realidade do setor. Possibilitando melhor gestão de desempenho em tempo real."/>
+              <ServiceCard variant="primary" iconSrc="/sahra-card-3.svg" title="Fluxo Inteligente" description="Cada tipo de solicitação pode ser enviada à equipe correspondente, além de já conter exatamente o que o paciente solicitou, evitando visitas desnecessárias ao quarto."/>
+            </div>
+          </div>
         </div>
-        <div className="w-[80%] flex flex-col gap-10 justify-center items-center">
-          <div className="flex flex-col gap-2">
-            <span className="text-[#4FA5BF] font-bold text-6xl">SAHRA</span>
-            <span className="text-sky-900 font-bold text-2xl">A Revolução da Assistência Hospitalar</span>
-            <span className="text-sky-900 text-lg">A SAHRA é a assistente virtual beira-leito com inteligência artificial projetada para elevar o padrão da assistência hospitalar. Com a SAHRA, o paciente pode realizar solicitações utilizando apenas sua voz, eliminando barreiras de comunicação e facilitando a interação com a equipe assistencial, uma vez que a assistente também prioriza e encaminha as solicitações para a área especifica, agilizando o processo de atendimento.</span>
+
+        <div id="simoh" className="flex flex-col gap-10 justify-center items-center">
+          <div className="flex justify-center">
+            <Image src="/logo-simoh.svg" alt="" width={100} height={100}/>
           </div>
-          <div className="w-full bg-gradient-sahra flex justify-center items-center py-4 rounded-2xl text-center">
-            <span className="text-white text-lg md:text-2xl px-4">Sistema Amiko de Hospitalidade e Resposta Assistencial</span>
+          <div className="w-[80%] flex flex-col gap-10 justify-center items-center">
+            <ServiceContent variant="secondary"/>
+            <Image src="/simoh_img_section.svg" alt="" width={400} height={300}/>
+            <div className="flex flex-wrap items-center justify-center w-full gap-4">
+              <ServiceCard variant="secondary" iconSrc="/simoh-card-1.svg" title="Apoio à Tomada de Decisões" description="Fornece insights valiosos para a gestão hospitalar, facilitando a tomada de decisões embasadas em informações confiáveis e atualizadas."/>
+              <ServiceCard variant="secondary" iconSrc="/simoh-card-2.svg" title="Monitoramento Abrangente" description="Permite o monitoramento de diversas áreas e equipamentos hospitalares, garantindo um ambiente seguro e funcional para pacientes e equipe médica."/>
+              <ServiceCard variant="secondary" iconSrc="/simoh-card-3.svg" title="Redução de Erros e incidentes" description="Ao detectar problemas de forma precoce, ajude a minimizar erros a incidentes, promovendo a segurança dos pacientes e a eficiência operacional do hospital."/>
+            </div>
           </div>
-          <Image src="/cover 1.svg" alt="" width={400} height={300}/>
-          <div className="flex flex-col md:flex-row justify-between w-full gap-4">
-            <div className="flex flex-col justify-center items-center">
-              <div className="bg-[#4FA6C0] p-4 rounded-full w-fit relative top-8">
-                <Image src="/arrowtop.svg" alt="" width={40} height={40}/>
-              </div>
-              <div className="bg-white shadow-xl flex flex-col text-center justify-center items-center px-4 pt-14 pb-8 max-w-[300px] gap-6">
-                <span className="text-xl text-sky-900 font-bold">Equipe Otimizada</span>
-                <span>Entregaremos dados assertivos e reais dos atendimentos, possibilitando a tomada de decisões embasadas pela realidade do setor. Possibilitando melhor gestão de desempenho em tempo real.</span>
-              </div>
-            </div>
-            <div className="flex flex-col justify-center items-center">
-              <div className="bg-[#4FA6C0] p-4 rounded-full w-fit relative top-8">
-                <Image src="/arrowtop.svg" alt="" width={40} height={40}/>
-              </div>
-              <div className="bg-white shadow-xl flex flex-col text-center justify-center items-center px-4 pt-14 pb-8 max-w-[300px] gap-6">
-                <span className="text-xl text-sky-900 font-bold">Equipe Otimizada</span>
-                <span>Entregaremos dados assertivos e reais dos atendimentos, possibilitando a tomada de decisões embasadas pela realidade do setor. Possibilitando melhor gestão de desempenho em tempo real.</span>
-              </div>
-            </div>
-            <div className="flex flex-col justify-center items-center">
-              <div className="bg-[#4FA6C0] p-4 rounded-full w-fit relative top-8">
-                <Image src="/arrowtop.svg" alt="" width={40} height={40}/>
-              </div>
-              <div className="bg-white shadow-xl flex flex-col text-center justify-center items-center px-4 pt-14 pb-8 max-w-[300px] gap-6">
-                <span className="text-xl text-sky-900 font-bold">Equipe Otimizada</span>
-                <span>Entregaremos dados assertivos e reais dos atendimentos, possibilitando a tomada de decisões embasadas pela realidade do setor. Possibilitando melhor gestão de desempenho em tempo real.</span>
-              </div>
+        </div>
+
+        <div id="soteh" className="flex flex-col gap-10 justify-center items-center">
+          <div className="flex justify-center">
+            <Image src="/logo-soteh.svg" alt="" width={100} height={100}/>
+          </div>
+          <div className="w-[80%] flex flex-col gap-10 justify-center items-center">
+            <ServiceContent variant="tertiary"/>
+            <Image src="/simoh_img_section.svg" alt="" width={400} height={300}/>
+            <div className="flex flex-wrap items-center justify-center w-full gap-4">
+              <ServiceCard variant="tertiary" iconSrc="/soteh-card-1.svg" title="Solução sob demanda" description="Fornece insights valiosos para a gestão hospitalar, facilitando a tomada de decisões embasadas em informações confiáveis e atualizadas."/>
+              <ServiceCard variant="tertiary" iconSrc="/soteh-card-2.svg" title="Melhoria de processos internos" description="Permite o monitoramento de diversas áreas e equipamentos hospitalares, garantindo um ambiente seguro e funcional para pacientes e equipe médica."/>
+              <ServiceCard variant="tertiary" iconSrc="/soteh-card-3.svg" title="Soluções personalizadas" description="Ao detectar problemas de forma precoce, ajude a minimizar erros a incidentes, promovendo a segurança dos pacientes e a eficiência operacional do hospital."/>
             </div>
           </div>
         </div>

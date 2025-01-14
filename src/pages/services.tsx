@@ -16,7 +16,7 @@ export default function Services(){
       <div className="flex flex-col py-8 px-8 gap-14 justify-center items-center">
         <div id="sahra" className="flex flex-col gap-10 justify-center items-center">
           <div className="flex justify-center">
-            <Image src="/logo-sahra.svg" alt="" width={100} height={100}/>
+            <Image src="/logo-sahra.svg" alt="" width={150} height={150}/>
           </div>
           <div className="w-[80%] flex flex-col gap-10 justify-center items-center">
             <ServiceContent variant="primary"/>
@@ -31,7 +31,7 @@ export default function Services(){
 
         <div id="simoh" className="flex flex-col gap-10 justify-center items-center">
           <div className="flex justify-center">
-            <Image src="/logo-simoh.svg" alt="" width={100} height={100}/>
+            <Image src="/logo-simoh.svg" alt="" width={150} height={150}/>
           </div>
           <div className="w-[80%] flex flex-col gap-10 justify-center items-center">
             <ServiceContent variant="secondary"/>
@@ -46,7 +46,7 @@ export default function Services(){
 
         <div id="soteh" className="flex flex-col gap-10 justify-center items-center">
           <div className="flex justify-center">
-            <Image src="/logo-soteh.svg" alt="" width={100} height={100}/>
+            <Image src="/logo-soteh.svg" alt="" width={150} height={150}/>
           </div>
           <div className="w-[80%] flex flex-col gap-10 justify-center items-center">
             <ServiceContent variant="tertiary"/>

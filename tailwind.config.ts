@@ -23,6 +23,8 @@ module.exports = {
         'gradient-to-r-primary': 'linear-gradient(to right,  #70A4BD,  #1A4B5A)',
         'gradient-to-r-secondary': 'linear-gradient(to right, #70BD70, #126312)',
         'gradient-to-r-tertiary': 'linear-gradient(to right, #FDB25F, #ED7C00)',
+        'hero_bg': "url('/hero_bg.svg')",
+        'about_bg': "url('/about_bg.svg')",
       },
       boxShadow: {
         glow: [

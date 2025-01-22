@@ -21,7 +21,7 @@ export default function Services(){
           <div className="w-[80%] flex flex-col gap-10 justify-center items-center">
             <ServiceContent variant="primary"/>
             <Image src="/cover 1.svg" alt="" width={400} height={300}/>
-            <div className="flex flex-wrap items-center justify-center w-full gap-4">
+            <div className="flex flex-wrap items-center justify-center md:justify-between w-full gap-4">
               <ServiceCard variant="primary" iconSrc="/sahra-card-1.svg" title="Equipe Otimizada" description="Apenas a equipe responsável por aquele tipo de solicitação receberá o chamado, evitando ocupar outras equipes com tarefas que não são de suas especialidades."/>
               <ServiceCard variant="primary" iconSrc="/sahra-card-2.svg" title="Gestão Inteligente" description="Entregaremos dados assertivos e reais dos atendimentos, possibilitando a tomada de decisões embasadas pela realidade do setor. Possibilitando melhor gestão de desempenho em tempo real."/>
               <ServiceCard variant="primary" iconSrc="/sahra-card-3.svg" title="Fluxo Inteligente" description="Cada tipo de solicitação pode ser enviada à equipe correspondente, além de já conter exatamente o que o paciente solicitou, evitando visitas desnecessárias ao quarto."/>
@@ -36,7 +36,7 @@ export default function Services(){
           <div className="w-[80%] flex flex-col gap-10 justify-center items-center">
             <ServiceContent variant="secondary"/>
             <Image src="/simoh_img_section.svg" alt="" width={400} height={300}/>
-            <div className="flex flex-wrap items-center justify-center w-full gap-4">
+            <div className="flex flex-wrap items-center justify-center md:justify-between w-full gap-4">
               <ServiceCard variant="secondary" iconSrc="/simoh-card-1.svg" title="Apoio à Tomada de Decisões" description="Fornece insights valiosos para a gestão hospitalar, facilitando a tomada de decisões embasadas em informações confiáveis e atualizadas."/>
               <ServiceCard variant="secondary" iconSrc="/simoh-card-2.svg" title="Monitoramento Abrangente" description="Permite o monitoramento de diversas áreas e equipamentos hospitalares, garantindo um ambiente seguro e funcional para pacientes e equipe médica."/>
               <ServiceCard variant="secondary" iconSrc="/simoh-card-3.svg" title="Redução de Erros e incidentes" description="Ao detectar problemas de forma precoce, ajude a minimizar erros a incidentes, promovendo a segurança dos pacientes e a eficiência operacional do hospital."/>
@@ -50,8 +50,12 @@ export default function Services(){
           </div>
           <div className="w-[80%] flex flex-col gap-10 justify-center items-center">
             <ServiceContent variant="tertiary"/>
-            <Image src="/simoh_img_section.svg" alt="" width={400} height={300}/>
-            <div className="flex flex-wrap items-center justify-center w-full gap-4">
+            <div className="flex flex-col md:flex-row gap-3 justify-center items-center w-full px-2">
+              <Image src="/soteh-1.svg" alt="" width={400} height={268} className="md:w-1/4"/>
+              <Image src="/soteh-2.svg" alt="" width={400} height={268} className="md:w-2/4"/>
+              <Image src="/soteh-3.svg" alt="" width={400} height={268} className="md:w-1/4"/>
+            </div>
+            <div className="flex flex-wrap items-center justify-center md:justify-between w-full gap-4">
               <ServiceCard variant="tertiary" iconSrc="/soteh-card-1.svg" title="Solução sob demanda" description="Fornece insights valiosos para a gestão hospitalar, facilitando a tomada de decisões embasadas em informações confiáveis e atualizadas."/>
               <ServiceCard variant="tertiary" iconSrc="/soteh-card-2.svg" title="Melhoria de processos internos" description="Permite o monitoramento de diversas áreas e equipamentos hospitalares, garantindo um ambiente seguro e funcional para pacientes e equipe médica."/>
               <ServiceCard variant="tertiary" iconSrc="/soteh-card-3.svg" title="Soluções personalizadas" description="Ao detectar problemas de forma precoce, ajude a minimizar erros a incidentes, promovendo a segurança dos pacientes e a eficiência operacional do hospital."/>

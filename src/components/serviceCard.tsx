@@ -6,8 +6,8 @@ const cardsStyle = tv({
   base: "shadow-xl flex flex-col text-center justify-center items-center px-4 pt-14 pb-8 max-w-[300px] min-w-[250px] h-[270px] gap-6 rounded-[8px]",
   variants: {
     variant: {
-      primary: "bg-[#F7FBFA]",
-      secondary: "bg-[#E5F1E5]",
+      primary: "bg-[#DDFAF2]",
+      secondary: "bg-[#D3FED3]",
       tertiary: "bg-[#FFEDDA]",
     },
   },

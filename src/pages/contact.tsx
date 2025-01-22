@@ -6,8 +6,8 @@ export default function Contact(){
       <div className="bg-sky-900 flex items-center justify-center h-32">
         <span className="text-3xl text-white">Entre em contato</span>
       </div>  
-      <div className="flex py-8 px-8 gap-14 justify-center items-center ">
-        <div className="flex flex-col md:flex-row md:w-[70%] gap-4 bg-white shadow-2xl">
+      <div className="flex py-8 px-8 gap-14 justify-center items-center relative top-[80px]">
+        <div className="flex flex-col md:flex-row md:w-[70%] gap-4 bg-white shadow-2xl rounded-[8px]">
           <div className="flex flex-col md:max-w-[50%] gap-8 items-center md:items-start justify-between p-6">
             <span className="text-sky-900 font-bold text-4xl">Entre em contato conosco e agende uma demonstração gratuita.</span>
             <span className="text-sky-900 text-3xl">Você vai se surpreender com os resultados que podemos alcançar juntos.</span>

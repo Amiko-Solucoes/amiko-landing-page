@@ -25,11 +25,11 @@ export function MobileMenu (){
           <SheetTitle>Menu</SheetTitle>
         </SheetHeader>
         <div className="text-sky-700 font-poppins flex flex-col justify-center items-center gap-10 h-full py-10 text-xl">
-          <span className="hover:text-sky-500">Home</span>
-          <span className="hover:text-sky-500">Sobre nós</span>
-          <span className="hover:text-sky-500">Serviços</span>
-          <span className="hover:text-sky-500">Parceiros</span>
-          <span className="hover:text-sky-500">Contato</span>
+          <a href="#hero" className="hover:text-sky-500">Home</a>
+          <a href="#aboutUs" className="hover:text-sky-500">Sobre nós</a>
+          <a href="#services" className="hover:text-sky-500">Serviços</a>
+          <a href="#partners" className="hover:text-sky-500">Parceiros</a>
+          <a href="#contact" className="hover:text-sky-500">Contato</a>
         </div>
       </SheetContent>
     </Sheet>

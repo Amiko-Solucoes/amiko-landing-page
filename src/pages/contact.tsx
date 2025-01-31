@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Contact(){
   return (
-    <div>
+    <div id="contact">
       <div className="bg-sky-900 flex items-center justify-center h-32">
         <span className="text-3xl text-white">Entre em contato</span>
       </div>  

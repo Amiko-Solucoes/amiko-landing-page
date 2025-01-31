@@ -10,7 +10,7 @@ import Autoplay from 'embla-carousel-autoplay'
 
 export default function Partners(){
   return (
-    <div>
+    <div id="partners">
       <div className="bg-sky-900 flex items-center justify-center h-32">
         <span className="text-3xl text-white">Parceiros</span>
       </div>  

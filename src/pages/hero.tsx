@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero(){
   return (
-    <div className="bg-hero_bg bg-no-repeat bg-cover min-h-[500px] flex flex-col px-4 md:px-8 py-8 md:flex-row md:justify-between items-center transition-transform">
+    <div id="hero" className="bg-hero_bg bg-no-repeat bg-cover min-h-[500px] flex flex-col px-4 md:px-8 py-8 md:flex-row md:justify-between items-center transition-transform">
       <div className="flex flex-col gap-4 md:gap-8 md:w-[40%]">
         <div className="flex flex-col">
           <span className="text-5xl md:text-6xl font-bold text-sky-900">Olá!</span>

@@ -1,3 +1,4 @@
+import { WhatsAppButton } from "@/components/whatsappButton";
 import AboutUs from "@/pages/aboutUs";
 import Contact from "@/pages/contact";
 import Footer from "@/pages/footer";
@@ -21,6 +22,7 @@ export default function Home() {
           <Contact />
           <Footer />
         </div>
+        <WhatsAppButton />
       </div>
     </div>
   );

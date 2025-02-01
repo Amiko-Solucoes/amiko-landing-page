@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { JsonLdScripts } from "@/components/JsonLDScripts";
 
 export const metadata = {
   title: "Amiko Soluções - Tecnologia Hospitalar Inteligente | SAHRA Assistente Hospitalar",
@@ -53,6 +54,7 @@ export default function RootLayout({
     <meta charSet="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     {/* biome-ignore lint/style/noUnusedTemplateLiteral: <explanation> */}
+    <JsonLdScripts />
     <body className={`vsc-initialized bg-white transition-colors`} >
       {children} 
     </body>

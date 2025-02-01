@@ -1,8 +1,8 @@
 "use client"
 
 export function WhatsAppButton () {
-  const phoneNumber = '5511999999999'; // Substitua pelo seu número de WhatsApp
-  const message = 'Olá, gostaria de mais informações!'; // Mensagem padrão
+  const phoneNumber = '5535999968808'; // Substitua pelo seu número de WhatsApp
+  const message = 'Gostaria de conhecer as soluções de otimização da Amiko'; // Mensagem padrão
 
   const handleClick = () => {
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;

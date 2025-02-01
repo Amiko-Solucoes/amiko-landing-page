@@ -6,7 +6,7 @@ const cardsStyle = tv({
   base: "shadow-xl flex flex-col text-center justify-center items-center px-4 pt-14 pb-8 max-w-[300px] min-w-[250px] h-[270px] gap-6 rounded-[8px]",
   variants: {
     variant: {
-      primary: "bg-[#DDFAF2]",
+      primary: "bg-[#BBEBFF]",
       secondary: "bg-[#D3FED3]",
       tertiary: "bg-[#FFEDDA]",
     },
@@ -54,7 +54,7 @@ interface CardVariantProps {
 export function ServiceCard ({variant = "primary", iconSrc, title, description}: CardVariantProps) {
   return (
     <>
-     <div className="flex flex-col justify-center items-center">
+     <div className="hover:-translate-y-4 transition-transform flex flex-col justify-center items-center">
         <div className={IconStyle({ variant })}>
           <Image src={iconSrc} alt="" width={40} height={40}/>
         </div>

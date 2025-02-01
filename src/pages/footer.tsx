@@ -18,13 +18,13 @@ export default function Footer(){
         <div className="flex flex-col gap-4">
           <div className="flex flex-col">
             <span className="font-bold">Endereço</span>
-            <span>Incubadora de Empresas - Av. João de Camargo, 510, Inatel, Sala 9</span>
-            <span>Santa Rita do Sapucaí - MG</span>
+            <span><a href="https://g.co/kgs/rRoQdnp" target="_blank">Incubadora de Empresas - Av. João de Camargo, 510, Inatel, Sala 9</a></span>
+            <span><a href="https://g.co/kgs/rRoQdnp" target="_blank">Santa Rita do Sapucaí - MG</a></span>
           </div>
           <div className="flex gap-6">
-            <Image src="/instagram_amiko.svg" alt="" width={32} height={32} />
-            <Image src="/facebook_amiko.svg" alt="" width={32} height={32} />
-            <Image src="/linkedin_amiko.svg" alt="" width={32} height={32} />
+            <a href="https://www.instagram.com/amikosolucoes/" target="_blank"><Image src="/instagram_amiko.svg" alt="" width={32} height={32} /></a>
+            <a href="https://www.linkedin.com/company/amikosolucoes"><Image src="/facebook_amiko.svg" alt="" width={32} height={32} /></a>
+            <a href="https://www.linkedin.com/company/amikosolucoes"><Image src="/linkedin_amiko.svg" alt="" width={32} height={32} /></a>
           </div>
         </div>
       </div>

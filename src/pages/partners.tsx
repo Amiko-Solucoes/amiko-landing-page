@@ -26,7 +26,7 @@ export default function Partners(){
         >
           <CarouselContent>
             <CarouselItem
-              className="flex items-center justify-center md:basis-1/3"
+              className="flex items-center justify-center md:basis-1/5"
             >
               <Image
                 src="/sao_lucas.svg"
@@ -36,7 +36,7 @@ export default function Partners(){
               />
             </CarouselItem> 
             <CarouselItem
-              className="flex items-center justify-center md:basis-1/3"
+              className="flex items-center justify-center md:basis-1/5"
             >
               <Image
                 src="/fapemig.svg"
@@ -46,7 +46,7 @@ export default function Partners(){
               />
             </CarouselItem>
             <CarouselItem
-              className="flex items-center justify-center md:basis-1/3"
+              className="flex items-center justify-center md:basis-1/5"
             >
               <Image
                 src="/inatel_startups.svg"
@@ -56,7 +56,7 @@ export default function Partners(){
               />
             </CarouselItem>
             <CarouselItem
-              className="flex items-center justify-center md:basis-1/3"
+              className="flex items-center justify-center md:basis-1/5"
             >
               <Image
                 src="/maincore.svg"
@@ -66,7 +66,7 @@ export default function Partners(){
               />
             </CarouselItem>
             <CarouselItem
-              className="flex items-center justify-center md:basis-1/3"
+              className="flex items-center justify-center md:basis-1/5"
             >
               <Image
                 src="/Frame 35.svg"

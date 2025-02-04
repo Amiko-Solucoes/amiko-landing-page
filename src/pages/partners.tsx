@@ -76,7 +76,7 @@ export default function Partners(){
               />
             </CarouselItem>
             <CarouselItem
-              className="flex items-center justify-center md:basis-1/3"
+              className="flex items-center justify-center md:basis-1/5"
             >
               <Image
                 src="/ana_moreira.svg"

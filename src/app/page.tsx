@@ -1,6 +1,7 @@
 import { WhatsAppButton } from "@/components/whatsappButton";
 import AboutUs from "@/pages/aboutUs";
 import Contact from "@/pages/contact";
+import Feedbacks from "@/pages/feedbacks";
 import Footer from "@/pages/footer";
 import Header from "@/pages/header";
 import Hero from "@/pages/hero";
@@ -19,6 +20,7 @@ export default function Home() {
           <AboutUs />
           <Services />
           <Partners />
+          <Feedbacks />
           <Contact />
           <Footer />
         </div>

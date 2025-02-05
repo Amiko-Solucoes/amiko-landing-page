@@ -21,7 +21,7 @@ export default function Home() {
           <Services />
           <Partners />
           <Feedbacks />
-          <Contact />
+          {/* <Contact /> */}
           <Footer />
         </div>
         <WhatsAppButton />

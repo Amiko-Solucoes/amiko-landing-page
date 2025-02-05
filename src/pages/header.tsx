@@ -22,6 +22,9 @@ export default function Header(){
             <a href="#partners">Parceiros</a>
           </li>
           <li className="hover:text-sky-500 hover:cursor-pointer">
+            <a href="#feedbacks">Depoimentos</a>
+          </li>
+          <li className="hover:text-sky-500 hover:cursor-pointer">
             <a href="#contact">Contato</a>
           </li>
         </ul>

@@ -29,6 +29,7 @@ export function MobileMenu (){
           <a href="#aboutUs" className="hover:text-sky-500">Sobre nós</a>
           <a href="#services" className="hover:text-sky-500">Serviços</a>
           <a href="#partners" className="hover:text-sky-500">Parceiros</a>
+          <a href="#feedbacks" className="hover:text-sky-500">Depoimentos</a>
           <a href="#contact" className="hover:text-sky-500">Contato</a>
         </div>
       </SheetContent>

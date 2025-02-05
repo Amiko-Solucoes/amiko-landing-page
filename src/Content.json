@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "image": "/feedback-alexandre.jpeg",
+    "name": "Alexandre Coelho",
+    "role": "Hospital Nossa Senhora das Dores - Diretor Executivo",
+    "feedback": "O investimento em novas tecnologias e parcerias com startups que possam melhorar ainda mais a jornada do cliente, aprimorando sua experiência, são fundamentais para o futuro da saúde. No HNSD isso será frequente, já que aliamos a tradição do nosso hospital à inovação no cuidado como uma das metas para crescimento"
+  },
+  {
+    "id": 2,
+    "image": "/feedback-joyce.jpeg",
+    "name": "Joyce Cristina",
+    "role": "Santa Casa Misericódia de Passos - Hotelaria",
+    "feedback": "Estamos utilizando o sistema SAHRA e está sendo muito útil pra nosso trabalho, facilita e otimiza nossas funções. O paciente solicita algo e pelo sistema já conseguimos ver o que ele está precisando, sem a necessidade de ir até o quarto duas vezes. Assim atendemos o paciente com maior agilidade. Não tinha conhecimento desse sistema em hospitais. Adorei a ideia."
+  },
+  {
+    "id": 3,
+    "image": "/feedback-bianca.jpeg",
+    "name": "Bianca Sofia",
+    "role": "Hospital São Lucas - Paciente",
+    "feedback": "É uma tecnologia que não se vê em qualquer lugar. Achei muito prático, principalmente porque vai fazer com que a gente seja atendida mais rápido. Já estamos muito satisfeitas com o atendimento humanizado que recebemos aqui, agora vai melhorar ainda mais."
+  },
+  {
+    "id": 4,
+    "image": "/feedback-lo-ami.jpeg",
+    "name": "Lo-Ami",
+    "role": "Santa Casa Misericódia de Passos - Acompanhante",
+    "feedback": "Tive o privilégio de ser o primeiro acompanhante a testar, e foi uma honra. Acredito que vai melhorar demais a interação entre hospital, acompanhante e paciente. Hoje eu estava com paciente e não podia deixar ele sozinho, ai mandei na SAHRA pedindo um suco. Foi super rápido e logo as meninas já levaram para mim. O sistema veio para agregar, e muito!"
+  },
+  {
+    "id": 5,
+    "image": "/feedback-emilene.jpeg",
+    "name": "Emilene",
+    "role": "Santa Casa Misericódia de Passos - Hotelaria",
+    "feedback": "Sou funcionária da Santa Casa de Passos. Essa semana foi instalada a SAHRA, que vai contribuir muito, tanto para o paciente quanto para os colaboradores da enfermagem e hotelaria, otimizando o tempo de atendimento. Os pacientes que já utilizaram o sistema estão encantados com a inovação. Parabéns a todos os envolvidos!"
+  },
+  {
+    "id": 6,
+    "image": "/feedback-bruno.jpeg",
+    "name": "Bruno Moreira",
+    "role": "Santa Casa de Belo Horizonte - Head de Inovação em Saúde",
+    "feedback": "Nosso objetivo é que a equipe assistencial passe mais tempo cuidando das pessoas e menos tempo com burocracias, realizando um atendimento cada vez mais personalizado, que é o futuro da medicina. Estamos montando uma verdadeira jornada de cuidados de saúde tecnológica."
+  },
+  {
+    "id": 7,
+    "image": "/feedback-bruna.jpeg",
+    "name": "Bruna de Oliveira",
+    "role": "Hospital São Lucas - Técnico de Enfermagem",
+    "feedback": "A tecnologia SAHRA tem facilitad muito nosso trabalho. É um aparelho fácil de utilizar, então a adaptação tem sido bem tranquila. Quando o paciente nos chama com um problema, a gente já pode chegar com uma solução."
+  }
+]

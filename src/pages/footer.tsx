@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Footer(){
   return (
-    <div className="bg-sky-900 flex flex-col gap-16 text-white pt-14">
-      <div className="flex flex-col md:flex-row justify-start items-start gap-16 px-10 py-10">
+    <div className="bg-sky-900 flex flex-col gap-16 text-white pt-14 justify-center items-center">
+      <div className="flex flex-col md:flex-row justify-center items-start gap-16 px-10 py-10 max-w-[1540px]">
         <Image src="/amiko_logo_branca.svg" alt="" width={200} height={150} />
         <div className="flex flex-col gap-4">
           <div className="flex flex-col">

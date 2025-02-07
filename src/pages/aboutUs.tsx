@@ -2,11 +2,11 @@ import Image from "next/image";
 
 export default function AboutUs(){
   return (
-    <div id="aboutUs">
-      <div className="bg-sky-900 flex items-center justify-center h-32">
+    <div id="aboutUs" className="flex flex-col items-center justify-center bg-about_bg bg-no-repeat bg-cover">
+      <div className="bg-sky-900 flex items-center justify-center h-32 w-full">
         <span className="text-3xl text-white">Quem Somos?</span>
       </div>  
-      <div className="bg-about_bg bg-no-repeat bg-cover flex flex-col md:flex-row py-8 px-8 gap-16 justify-center">
+      <div className="max-w-[1540px] flex flex-col md:flex-row py-8 px-8 gap-16 justify-center">
         <div className="md:max-w-[60%] flex flex-col justify-between text-lg gap-4">
           <span>
           A inspiração para nossa empresa surgiu durante a estadia do nosso CEO, Roberto, em um hospital, onde ele esteve internado por alguns dias. Durante esse período, ele identificou uma lacuna significativa no processo de chamada de assistência, o que despertou sua determinação em buscar soluções eficazes e inovadoras, visando otimizar os processos hospitalares com tecnologia. Essa experiência foi fundamental para moldar nosso propósito: <strong className="text-sky-900">Auxiliar instituições hospitalares na redução de custos, melhorar a eficiência operacional e proporcionar maior bem-estar e cuidado aos pacientes, equipe e planeta através de tecnologia.</strong>

@@ -26,7 +26,7 @@ export default function Feedbacks(){
       <div className="bg-sky-900 flex items-center justify-center h-32 w-full">
         <span className="text-3xl text-white">Depoimentos</span>
       </div>  
-      <div className=" flex py-8 px-8 gap-16 md:max-w-[95%]">
+      <div className=" flex py-8 px-8 gap-16 flex-col items-center justify-center">
         <Carousel
           opts={{
             align: "start",
@@ -35,7 +35,7 @@ export default function Feedbacks(){
           plugins={[
             Autoplay({delay: 5000}),
           ]}
-          className="w-full hidden md:flex"
+          className="hidden md:flex max-w-[95%]"
         >
           <CarouselContent>
             {feedbacks.map((item : CardProps) => (

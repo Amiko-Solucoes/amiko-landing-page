@@ -3,7 +3,6 @@
 import * as z from 'zod'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { sendMail } from '@/lib/api'
 import { toast, Toaster } from 'sonner'
 
 const formsResponse = z.object({
@@ -23,24 +22,28 @@ export default function Contact(){
   const isLoading = formState.isSubmitting
   const onSubmit = async (data: FormsResponse) => {
     const mailText = 
-      `
-      Nome: ${data.nome}\n 
-      Email: ${data.email}\n 
-      Cargo: ${data.cargo}\n 
-      Mensagem: ${data.mensagem}`
-
-    const response = await sendMail({
-      email: data.email,
-      subject: 'Contato do site',
-      text: mailText,
+      `Nome: ${data.nome}\n 
+       Email: ${data.email}\n 
+       Cargo: ${data.cargo}\n 
+       Mensagem: ${data.mensagem}`;
+  
+    const response = await fetch('/api/sendMail', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        email: data.email,
+        subject: 'Contato do site',
+        text: mailText,
+      }),
     });
-
-    if (response?.messageId) {
-      toast.success('Email enviado com sucesso!')
+  
+    if (response.ok) {
+      toast.success('Email enviado com sucesso!');
+      reset();
     } else {
-      toast.error('Falha ao enviar o email.')
+      toast.error('Falha ao enviar o email.');
     }
-  }
+  };
 
   return (
     <div id="contact">

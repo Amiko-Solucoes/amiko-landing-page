@@ -1,6 +1,47 @@
-import Image from "next/image";
+"use client"
+
+import * as z from 'zod'
+import { useForm } from 'react-hook-form'
+import { zodResolver } from '@hookform/resolvers/zod'
+import { sendMail } from '@/lib/api'
+import { toast, Toaster } from 'sonner'
+
+const formsResponse = z.object({
+  nome: z.string().nonempty().min(2, {message: 'Porfavor entre com seu nome'}),
+  email: z.string().nonempty().email({message: 'Porfavor entre com um email válido'}),
+  cargo: z.string().nonempty().min(2, {message: 'Porfavor entre com seu cargo'}),
+  mensagem: z.string().nonempty().min(10, {message: 'Porfavor entre com uma mensagem de no mínimo 10 caracteres'}),
+})
+
+type FormsResponse = z.infer<typeof formsResponse>
 
 export default function Contact(){
+  const {register, handleSubmit, reset, formState} = useForm<FormsResponse>({
+    resolver: zodResolver(formsResponse),
+  })
+
+  const isLoading = formState.isSubmitting
+  const onSubmit = async (data: FormsResponse) => {
+    const mailText = 
+      `
+      Nome: ${data.nome}\n 
+      Email: ${data.email}\n 
+      Cargo: ${data.cargo}\n 
+      Mensagem: ${data.mensagem}`
+
+    const response = await sendMail({
+      email: data.email,
+      subject: 'Contato do site',
+      text: mailText,
+    });
+
+    if (response?.messageId) {
+      toast.success('Email enviado com sucesso!')
+    } else {
+      toast.error('Falha ao enviar o email.')
+    }
+  }
+
   return (
     <div id="contact">
       <div className="bg-sky-900 flex items-center justify-center h-32">
@@ -18,7 +59,10 @@ export default function Contact(){
             </div>
           </div>
           <div className="p-6 w-full rounded-lg">
-            <form className="flex flex-col gap-4">
+            <form 
+                className="flex flex-col gap-4"
+                onSubmit={handleSubmit(onSubmit)}
+              >
               <div>
                 <label htmlFor="nome" className="block text-sm font-medium text-sky-900">
                   Nome
@@ -28,6 +72,8 @@ export default function Contact(){
                   id="nome"
                   className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-[8px] shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                   placeholder="Digite seu nome"
+                  required
+                  {...register('nome')}
                 />
               </div>
 
@@ -40,6 +86,8 @@ export default function Contact(){
                   id="email"
                   className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-[8px] shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                   placeholder="Digite seu email"
+                  required
+                  {...register('email')}
                 />
               </div>
 
@@ -52,6 +100,8 @@ export default function Contact(){
                   id="cargo"
                   className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-[8px] shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                   placeholder="Digite seu cargo"
+                  required
+                  {...register('cargo')}
                 />
               </div>
 
@@ -64,6 +114,8 @@ export default function Contact(){
                   rows={4}
                   className="resize-none mt-1 block w-full px-4 py-2 border border-gray-300 rounded-[8px] shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                   placeholder="Digite sua mensagem"
+                  required
+                  {...register('mensagem')}
                 />
               </div>
 
@@ -71,14 +123,16 @@ export default function Contact(){
                 <button
                   type="submit"
                   className="px-10 py-2 text-white bg-[#4FA6C0] rounded-[8px] shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                  disabled={isLoading}
                 >
-                  Enviar
+                  {isLoading ? 'Enviando...' : 'Enviar'}
                 </button>
               </div>
             </form>
           </div>
         </div>
       </div>
+      <Toaster />
     </div>
   )
 }

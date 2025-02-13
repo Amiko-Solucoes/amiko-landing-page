@@ -18,7 +18,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   const transporter = nodemailer.createTransport({
     service: 'gmail',
-    port: 587,
+    port: 465,
     secure: true,
     auth: {
       user: process.env.SMTP_SERVER_USERNAME,
@@ -27,7 +27,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   });
 
   try {
-    await transporter.sendMail({
+    const info = await transporter.sendMail({
       from: email,
       to: sendTo || process.env.SITE_MAIL_RECIEVER,
       subject,
@@ -35,9 +35,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       html: html || '',
     });
 
+    console.log('Email enviado com sucesso!', info);
     return res.status(200).json({ message: 'Email enviado com sucesso!' });
-  } catch (error) {
-    console.error('Erro ao enviar email:', error);
-    return res.status(500).json({ message: 'Falha ao enviar email', error });
+  } catch (error: any) {
+    console.error('Erro ao enviar email:', error.message, error.response);
+    return res.status(500).json({ message: 'Falha ao enviar email', error: error.message });
   }
 }

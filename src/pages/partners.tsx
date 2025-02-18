@@ -29,62 +29,101 @@ export default function Partners(){
               className="flex items-center justify-center md:basis-1/5"
             >
               <Image
-                src="/sao_lucas.svg"
+                src="/sebrae_logo.jpeg"
                 alt=""
                 width={200}
                 height={200}
               />
             </CarouselItem> 
+          
             <CarouselItem
               className="flex items-center justify-center md:basis-1/5"
             >
               <Image
-                src="/fapemig.svg"
+                src="/inatelstartup_logo.jpeg"
                 alt=""
                 width={200}
                 height={200}
               />
-            </CarouselItem>
+            </CarouselItem> 
+
             <CarouselItem
               className="flex items-center justify-center md:basis-1/5"
             >
               <Image
-                src="/inatel_startups.svg"
+                src="/misericordia_logo.jpeg"
                 alt=""
                 width={200}
                 height={200}
               />
-            </CarouselItem>
+            </CarouselItem> 
+          
             <CarouselItem
               className="flex items-center justify-center md:basis-1/5"
             >
               <Image
-                src="/maincore.svg"
+                src="/saolucas_logo.jpeg"
                 alt=""
                 width={200}
                 height={200}
               />
-            </CarouselItem>
+            </CarouselItem> 
+          
             <CarouselItem
               className="flex items-center justify-center md:basis-1/5"
             >
               <Image
-                src="/Frame 35.svg"
+                src="/clinicas_logo.jpeg"
                 alt=""
                 width={200}
                 height={200}
               />
-            </CarouselItem>
+            </CarouselItem> 
+          
             <CarouselItem
               className="flex items-center justify-center md:basis-1/5"
             >
               <Image
-                src="/ana_moreira.svg"
+                src="/fapemig_logo.jpeg"
                 alt=""
                 width={200}
                 height={200}
               />
-            </CarouselItem>
+            </CarouselItem> 
+
+            <CarouselItem
+              className="flex items-center justify-center md:basis-1/5"
+            >
+              <Image
+                src="/iam_logo.jpeg"
+                alt=""
+                width={200}
+                height={200}
+              />
+            </CarouselItem> 
+          
+            <CarouselItem
+              className="flex items-center justify-center md:basis-1/5"
+            >
+              <Image
+                src="/centelha_logo.jpeg"
+                alt=""
+                width={200}
+                height={200}
+              />
+            </CarouselItem> 
+          
+            <CarouselItem
+              className="flex items-center justify-center md:basis-1/5"
+            >
+              <Image
+                src="/senhoradores_logo.jpeg"
+                alt=""
+                width={200}
+                height={200}
+              />
+            </CarouselItem> 
+          
           </CarouselContent>
         </Carousel>
       </div>

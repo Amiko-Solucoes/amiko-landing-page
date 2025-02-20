@@ -21,19 +21,22 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     port: 465,
     secure: true,
     auth: {
-      user: process.env.SMTP_SERVER_USERNAME,
-      pass: process.env.SMTP_SERVER_PASSWORD,
+      user: process.env.NEXT_PUBLIC_SMTP_SERVER_USERNAME,
+      pass: process.env.NEXT_PUBLIC_SMTP_SERVER_PASSWORD,
     },
   });
 
   try {
     const info = await transporter.sendMail({
       from: email,
-      to: sendTo || process.env.SITE_MAIL_RECIEVER,
+      to: sendTo || process.env.NEXT_PUBLIC_SITE_MAIL_RECIEVER,
       subject,
       text,
       html: html || '',
     });
+
+    console.log(process.env.NEXT_PUBLIC_SMTP_SERVER_USERNAME, process.env.NEXT_PUBLIC_SMTP_SERVER_PASSWORD);
+    console.log(process.env.NEXT_PUBLIC_SITE_MAIL_RECIEVER);
 
     console.log('Email enviado com sucesso!', info);
     return res.status(200).json({ message: 'Email enviado com sucesso!' });

@@ -35,9 +35,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       html: html || '',
     });
 
-    console.log(process.env.NEXT_PUBLIC_SMTP_SERVER_USERNAME, process.env.NEXT_PUBLIC_SMTP_SERVER_PASSWORD);
-    console.log(process.env.NEXT_PUBLIC_SITE_MAIL_RECIEVER);
-
     console.log('Email enviado com sucesso!', info);
     return res.status(200).json({ message: 'Email enviado com sucesso!' });
   } catch (error: any) {

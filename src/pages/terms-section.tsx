@@ -1,0 +1,86 @@
+export default function TermsSection(){
+  return (
+    <div>
+      <div className="bg-sky-900 flex items-center justify-center h-32 mt-20">
+        <span className="text-3xl text-white">Termos de Uso</span>
+      </div> 
+      <div className="flex flex-col w-full min-h-screen p-8 text-left bg-about_bg bg-cover bg-center bg-no-repeat text-sky-900">
+        <p>A <strong>AMIKO SOLUÇÕES EM TECNOLOGIA LTDA</strong>, pessoa jurídica de direito privado registrada sob o CNPJ de nº 44.926.803/0001-47, com sede à Avenida João de Camargo, nº 510, Incubadora de empresas - Sala 9, bairro Centro – CEP 37.534-001 – na cidade de Santa Rita do Sapucaí, estado de Minas Gerais, telefone (35) 99996-8808, endereço eletrônico contato@amikosolucoes.com, única e exclusiva proprietária das marcas e dos domínios associados ao “SAHRA – Sistema Amiko de Hospitalidade e Resposta Assistencial”, divulga, por este documento, as condições de uso do Sistema, suas funcionalidades, limitações e possibilidades, nos termos e condições a seguir expostos.</p>
+        
+        <p><strong>1. Sobre os Termos De Uso e Alterações</strong></p>
+        
+        <p>Todas as regras de uso do Sistema pelo Contratante — e, sempre que o contexto assim requerer, “Contratante” deverá incluir os Usuários a ela associados — são regidos por esse documento, cuja aceitação é imprescindível para a utilização dos serviços.</p>
+        
+        <p>Ao formalizar a contratação da prestação do serviço e acessar, usar ou de qualquer outra maneira transmitir informações para o nosso Sistema — abrangendo tanto os dispositivos quanto o domínio e seus subdomínios, como quaisquer outros sites, interfaces ou aplicativos nos quais a Amiko disponibilize as soluções — o Contratante <strong><u>aceita</u></strong>, de forma ampla e irrestrita todos os termos, cláusulas e condições deste documento.</p>
+        
+        <p>A Amiko se reserva o direito de alterar estes Termos de Uso a qualquer tempo para refletir alterações do Sistema, dos seus serviços, de suas políticas, mudanças na legislação, avanços tecnológicos e/ou ajustar integrações com serviços ou produtos fornecidos por terceiros. Quando essas alterações implicarem em mudanças de práticas significativas e que ensejem nova autorização, o Contratante será cientificado.</p>
+        
+        <p>Se o Contratante deixar de concordar com qualquer disposição aqui presente, então o uso do Sistema deve ser interrompido imediatamente. O uso continuado depois que as alterações tiverem sido cientificadas constituirá na aceitação plena das alterações para todos os fins e efeitos de direito.</p>
+        
+        <p><strong>2. Sobre os Serviços</strong></p>
+        
+        <p>O SAHRA - Sistema de Hospitalidade Amiko e Resposta Assistencial baseia-se na utilização de inteligência artificial e visa a otimizar o fluxo de trabalho das equipes de enfermagem e melhorar o atendimento humanizado e dedicado pela equipe assistencial aos pacientes internados, além de propiciar maior segurança na tomada de decisões por parte dos gestores hospitalares. O Sistema poderá ser comercializado através de Locação ou Venda, conforme Contrato, e é acompanhado dos seguintes dispositivos:</p>
+        
+        <ul>
+          <li><strong>Assistente Amiko</strong>: dispositivo alto-falante inteligente, equipado com microfone, a partir do qual o usuário realiza solicitações em comandos verbais, as quais são transformadas em texto e encaminhadas com a descrição e devida prioridade à equipe correspondente.</li>
+          <li><strong>Interface Multiplataforma</strong>: exibe todos os chamados e possibilita o acompanhamento dos atendimentos e das respectivas características por meio de relatórios de desempenho.</li>
+        </ul>
+        
+        <p>Ainda, isoladamente, podem ser contratados os dispositivos abaixo:</p>
+        
+        <ul>
+          <li><strong>Botão de Chamados</strong>: consiste em um equipamento idealizado como alternativa ao acionamento por voz, a partir do toque.</li>
+          <li><strong>Sensor de Quedas</strong>: dispositivo fixado às vestes dos pacientes, capaz de identificar uma queda ou uma tentativa de locomoção.</li>
+        </ul>
+        
+        <p><strong>3. Requisitos e Condições de Utilização</strong></p>
+        
+        <p>É de responsabilidade do Contratante garantir a presença de todos os elementos necessários ao funcionamento do Sistema, bem como que sejam compatíveis e estejam devidamente configurados.</p>
+        
+        <p><strong>Dispositivos</strong>: Para o regular acesso e uso dos serviços é necessária a existência nas instalações de um dispositivo Assistente Amiko equipado com microfone. Ainda, caso contratado, pode haver um dispositivo Botão de Chamados no apartamento. Igualmente, caso contratado, é necessário um dispositivo Sensor de Quedas preso às vestes da pessoa acamada.</p>
+        
+        <p><strong>Higienização e cuidados</strong>: Regularmente, o aparelho deve ser higienizado com álcool ou outra substância não corrosiva.</p>
+        
+        <p><strong>Modo de ativação</strong>: Para enviar uma Solicitação, o usuário deve “acordar” o dispositivo falando a palavra de ativação. A partir disso, o dispositivo se comunica com o servidor, transcreve o texto, identifica a necessidade/intenção da solicitação e então responde verbalmente para o usuário.</p>
+        
+        <p><strong>Fonte de alimentação</strong>: O Assistente Amiko não possui bateria integrada e, portanto, necessita de um ponto de energia elétrica a, no máximo, 50 cm do local onde será instalado.</p>
+        
+        <p><strong>Conexão à internet</strong>: Além disso, o dispositivo não funciona sem conexão à internet, e a lentidão da internet pode tornar o dispositivo mais lento também nas respostas.</p>
+        
+        <p><strong>Acesso via navegação web</strong>: O acesso à Interface Multiplaformas ocorre via web pelo endereço eletrônico <a href="https://amiko.app.br">https://amiko.app.br</a>, através de login e senha.</p>
+        
+        <p><strong>Login e senha</strong>: A combinação de usuário e senha é intransferível e garante acesso seguro ao Sistema. O Usuário deve assumir o compromisso de não informar seus dados a terceiros, responsabilizando-se integralmente pelo uso.</p>
+        
+        <p><strong>Software e hardware</strong>: O Sistema não necessita da instalação de qualquer software, exceto para funcionalidades de exportação de relatórios.</p>
+        
+        <p><strong>Smart Devices de terceiros</strong>: O Sistema efetua tão somente a comunicação entre os dispositivos, não assumindo responsabilidade pelos eventuais vícios ou defeitos de produtos de terceiros.</p>
+        
+        <p><strong>4. Vedações de Uso e Isenção de Responsabilidade</strong></p>
+        
+        <p><strong>4.1. Vedações de uso</strong>: Não é permitido ao Contratante:</p>
+        
+        <ul>
+          <li>Utilizar o Sistema de maneira incompatível com as disposições da legislação.</li>
+          <li>Efetuar o compartilhamento de senhas de acesso entre diferentes usuários.</li>
+          <li>Executar engenharia reversa ou modificar o Serviço Amiko.</li>
+        </ul>
+        
+        <p><strong>4.2. Isenção de responsabilidade</strong>: O Contratante está ciente de que o dispositivo visa apenas facilitar a abertura de chamados e otimizar o fluxo de atendimento.</p>
+        
+        <p><strong>5. Privacidade e proteção de dados</strong></p>
+        
+        <p>Além de observar os Termos de Uso, é necessário que o Usuário conheça a Política de Privacidade da AMIKO, disponível em <a href="https://amikosolucoes.com/privacy">https://amikosolucoes.com/privacy</a>.</p>
+        
+        <p><strong>6. Manutenção e Suporte</strong></p>
+        
+        <p>A Amiko manterá monitoramento constante do SAHRA. Em caso de dificuldades técnicas ou de manutenção, informar ao Contratante e providenciar a correção.</p>
+        
+        <p><strong>7. Do Contrato de Prestação de Serviços</strong></p>
+        
+        <p>As disposições relativas a Responsabilidades, Remuneração, Vigência e Rescisão serão reguladas por instrumento próprio, conforme “Proposta de Minuta de Contrato”.</p>
+        
+        <p><u>Última atualização</u>: maio de 2023.</p>
+      </div>
+    </div>
+  )
+}

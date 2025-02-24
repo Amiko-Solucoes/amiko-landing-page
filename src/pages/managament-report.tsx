@@ -1,4 +1,4 @@
-export function ManagementSection (){
+export default function ManagementSection (){
   return (
     <div className="flex flex-col items-center justify-center w-screen">
       <div className="bg-sky-900 flex items-center justify-center h-32 mt-20">

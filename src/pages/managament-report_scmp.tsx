@@ -1,4 +1,4 @@
-export function ManagementSectionSCMP (){
+export default function ManagementSectionSCMP (){
   return (
     <div className="flex flex-col items-center justify-center w-screen">
       <div className="bg-sky-900 flex items-center w-full justify-center h-32 mt-20">

@@ -11,22 +11,22 @@ export default function Header(){
         <div className="font-poppins flex flex-row gap-6 lg:gap-8">
           <ul className="text-sky-700 flex-row gap-8 items-center transition-all lg:flex hidden">
             <li className="hover:text-sky-500 hover:cursor-pointer">
-              <a href="#hero">Home</a>
+              <a href="/#hero">Home</a>
             </li>
             <li className="hover:text-sky-500 hover:cursor-pointer">
-              <a href="#aboutUs">Sobre nós</a>
+              <a href="/#aboutUs">Sobre nós</a>
             </li>
             <li className="hover:text-sky-500 hover:cursor-pointer">
-              <a href="#services">Serviços</a>
+              <a href="/#services">Serviços</a>
             </li>
             <li className="hover:text-sky-500 hover:cursor-pointer">
-              <a href="#partners">Parceiros</a>
+              <a href="/#partners">Parceiros</a>
             </li>
             <li className="hover:text-sky-500 hover:cursor-pointer">
-              <a href="#feedbacks">Depoimentos</a>
+              <a href="/#feedbacks">Depoimentos</a>
             </li>
             <li className="hover:text-sky-500 hover:cursor-pointer">
-              <a href="#contact">Contato</a>
+              <a href="/#contact">Contato</a>
             </li>
           </ul>
           

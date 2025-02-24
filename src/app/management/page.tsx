@@ -1,6 +1,6 @@
 import { WhatsAppButton } from "@/components/whatsappButton";
 import Header from "@/pages/header";
-import { ManagementSection } from "@/pages/managament-report";
+import ManagementSection from "@/pages/managament-report";
 
 export default function Management() {
   return (

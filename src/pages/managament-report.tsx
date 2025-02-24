@@ -1,7 +1,7 @@
 export default function ManagementSection (){
   return (
     <div className="flex flex-col items-center justify-center w-screen">
-      <div className="bg-sky-900 flex items-center justify-center h-32 mt-20">
+      <div className="bg-sky-900 flex items-center w-full justify-center h-32 mt-20">
         <span className="text-3xl text-white">Relatório Gerencial</span>
       </div> 
 

@@ -23,7 +23,7 @@ export default function Footer(){
           </div>
           <div className="flex gap-6">
             <a href="https://www.instagram.com/amikosolucoes/" target="_blank"><Image src="/instagram_amiko.svg" alt="" width={32} height={32} /></a>
-            <a href="https://www.linkedin.com/company/amikosolucoes"><Image src="/facebook_amiko.svg" alt="" width={32} height={32} /></a>
+            <a href="https://www.facebook.com/amikosolucoes/"><Image src="/facebook_amiko.svg" alt="" width={32} height={32} /></a>
             <a href="https://www.linkedin.com/company/amikosolucoes"><Image src="/linkedin_amiko.svg" alt="" width={32} height={32} /></a>
           </div>
         </div>

@@ -3,10 +3,12 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   async rewrites() {
     return [
-      {
-        source: "/api/:path*", // Qualquer rota que comece com /api/
-        destination: "https://sua-api.com/api/:path*", // URL da API de destino
-      },
+      { source: "/LGPD", destination: "/privacy"},
+      { source: "/lgpd", destination: "/privacy"},
+      { source: "/privacidade", destination: "/privacy"},
+      { source: "/termos", destination: "/terms"},
+      { source: "/gerencial", destination: "/management-report"},
+      { source: "/gerencial-scmp", destination: "/management-report-scmp"},
     ];
   },
 }

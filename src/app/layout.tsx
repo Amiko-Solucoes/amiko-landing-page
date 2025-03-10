@@ -53,7 +53,7 @@ export default function RootLayout({
     <head>
       <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="page icon" href="\logo.svg" />
+      <link rel="page icon" href="\favicon.ico" />
       {/* biome-ignore lint/style/noUnusedTemplateLiteral: <explanation> */}
       
         <script type="application/ld+json">

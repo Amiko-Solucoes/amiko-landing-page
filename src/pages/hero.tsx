@@ -14,9 +14,15 @@ export default function Hero(){
           <HeroButton />
         </div>
         <div className="hidden lg:flex lg:flex-wrap">
-          <Image className="relative left-16 hover:-translate-y-4 transition-transform" src="card_simoh.svg" alt="" width={240} height={300}/>
-          <Image className="relative left-8 top-10 hover:-translate-y-4 transition-transform" src="card_soteh.svg"  alt="" width={240} height={300}/>
-          <Image className="relative hover:-translate-y-4 transition-transform" src="card_sahra.svg" alt="" width={240} height={300}/>
+          <a href="#simoh">
+            <Image className="relative left-16 hover:-translate-y-4 transition-transform" src="card_simoh.svg" alt="" width={240} height={300}/>
+          </a>
+          <a href="#soteh">
+            <Image className="relative left-8 top-10 hover:-translate-y-4 transition-transform" src="card_soteh.svg"  alt="" width={240} height={300}/>
+          </a>
+          <a href="#moara">
+            <Image className="relative hover:-translate-y-4 transition-transform" src="card_moara.svg" alt="" width={240} height={300}/>
+          </a>
         </div>
       </div>
     </div>

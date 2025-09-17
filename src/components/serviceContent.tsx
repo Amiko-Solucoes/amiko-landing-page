@@ -1,5 +1,6 @@
 import { twMerge } from 'tailwind-merge';
 import { tv } from 'tailwind-variants';
+import { Button } from './ui/button';
 
 const serviceStyles = tv({
   base: "flex flex-col gap-2",
@@ -36,11 +37,11 @@ interface ServiceContentProps {
 export function ServiceContent({ variant = "primary" }: ServiceContentProps) {
   const texts = {
     primary: {
-      title: "SAHRA",
+      title: "MOARA",
       subtitle: "A Revolução da Assistência Hospitalar",
       description:
-        "A SAHRA é a assistente virtual beira-leito com inteligência artificial projetada para elevar o padrão da assistência hospitalar. Com a SAHRA, o paciente pode realizar solicitações utilizando apenas sua voz, eliminando barreiras de comunicação e facilitando a interação com a equipe assistencial, uma vez que a assistente também prioriza e encaminha as solicitações para a área especifica, agilizando o processo de atendimento.",
-      footer: "Sistema Amiko de Hospitalidade e Resposta Assistencial",
+        "A MOARA é a assistente virtual beira-leito com inteligência artificial projetada para elevar o padrão da assistência hospitalar. Com a MOARA, o paciente pode realizar solicitações utilizando apenas sua voz, eliminando barreiras de comunicação e facilitando a interação com a equipe assistencial, uma vez que a assistente também prioriza e encaminha as solicitações para a área especifica, agilizando o processo de atendimento.",
+      footer: "Sistema Amiko de Hospitalidade",
     },
     secondary: {
       title: "SIMOH",
@@ -66,6 +67,11 @@ export function ServiceContent({ variant = "primary" }: ServiceContentProps) {
         <span className="font-bold text-6xl">{content.title}</span>
         <span className="text-sky-900 font-bold text-2xl">{content.subtitle}</span>
         <span className="text-sky-900 text-lg">{content.description}</span>
+      </div>
+      <div className={`${variant === 'primary' ? 'flex' : 'hidden'} justify-center`}>
+        <a href="#the_moara">
+          <Button variant="outline" className="rounded-[8px] text-base border-sky-900 text-sky-900 hover:bg-sky-900 hover:text-white">Saiba Mais Sobre a MOARA</Button>
+        </a>
       </div>
       <div className={footerStyles({ variant })}>
         <span className="text-white text-lg md:text-2xl px-4">{content.footer}</span>

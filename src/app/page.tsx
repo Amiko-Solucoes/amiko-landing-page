@@ -5,7 +5,7 @@ import Feedbacks from "@/pages/feedbacks";
 import Footer from "@/pages/footer";
 import Header from "@/pages/header";
 import Hero from "@/pages/hero";
-import { MoaraInfo } from "@/pages/moara";
+import MoaraInfo  from "@/pages/moara";
 import Partners from "@/pages/partners";
 import Services from "@/pages/services";
 

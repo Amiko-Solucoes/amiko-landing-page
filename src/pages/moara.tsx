@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export function MoaraInfo(){
+export default function MoaraInfo(){
   return (
     <div id="the_moara" >
       <div className="bg-sky-900 flex items-center justify-center h-32 w-full">

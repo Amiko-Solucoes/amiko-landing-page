@@ -10,6 +10,7 @@ import Partners from "@/pages/partners";
 import Services from "@/pages/services";
 
 export default function Home() {
+  // teste 
   return (
     <div className="flex flex-col items-center justify-center bg-white">
       <div className="flex flex-col items-center ">

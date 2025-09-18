@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Clarity from '@microsoft/clarity';
 
 export const metadata = {
   title: "Amiko Soluções - Tecnologia Hospitalar Inteligente | SAHRA Assistente Hospitalar",
@@ -48,6 +49,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const projectId = ""
+
+  if (process.env.NEXT_PUBLIC_CLARITY_ID) {
+    Clarity.init(process.env.NEXT_PUBLIC_CLARITY_ID);
+  }
+
   return (
     <html lang="pt-BR">
     <head>

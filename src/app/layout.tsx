@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Clarity from '@microsoft/clarity';
 import Script from "next/script";
+import { useEffect } from "react";
 
 export const metadata = {
   title: "Amiko Soluções - Tecnologia Hospitalar Inteligente | SAHRA Assistente Hospitalar",
@@ -52,9 +53,11 @@ export default function RootLayout({
 }>) {
   const projectId = ""
 
-  if (process.env.NEXT_PUBLIC_CLARITY_ID) {
-    Clarity.init(process.env.NEXT_PUBLIC_CLARITY_ID);
-  }
+  useEffect(() => {
+    if (process.env.NEXT_PUBLIC_CLARITY_ID) {
+      Clarity.init(process.env.NEXT_PUBLIC_CLARITY_ID);
+    }
+  }, []);
 
   return (
     <html lang="pt-BR">

@@ -1,3 +1,5 @@
+"use client";
+
 import { WhatsAppButton } from "@/components/whatsappButton";
 import AboutUs from "@/pages/aboutUs";
 import Contact from "@/pages/contact";
@@ -9,8 +11,17 @@ import MoaraInfo  from "@/pages/moara";
 import Partners from "@/pages/partners";
 import Services from "@/pages/services";
 import Script from "next/script";
+import { useEffect } from "react";
+import Clarity from '@microsoft/clarity';
 
 export default function Home() {
+  
+  useEffect(() => {
+    if (process.env.NEXT_PUBLIC_CLARITY_ID) {
+      Clarity.init(process.env.NEXT_PUBLIC_CLARITY_ID);
+    }
+  }, []);
+
     // teste 
   return (
     <>

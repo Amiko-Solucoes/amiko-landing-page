@@ -3,12 +3,13 @@ import "./globals.css";
 import Script from "next/script";
 
 export const metadata = {
-  title: "Amiko Soluções - Tecnologia Hospitalar Inteligente | SAHRA Assistente Hospitalar",
-  description: "Soluções de software e hardware para melhoria de eficiência, fluxo de trabalho, gestão e experiência dos pacientes e colaboradores em hospitais.",
+  // title: "Amiko Soluções - Tecnologia Hospitalar Inteligente | MOARA Assistente Hospitalar",
+  title: "Amiko Soluções - MOARA Assistente Hospitalar",
+  description: "Soluções de software e hardware para melhoria de eficiência, fluxo de trabalho, gestão e experiência dos pacientes e colaboradores em hospitais, através das soluções: MOARA, SIMOH e SOTEH!",
   keywords: [
     "Amiko",
     "Amiko Soluções",
-    "SAHRA",
+    "MOARA",
     "Assistente Hospitalar",
     "Monitoramento Hospitalar",
     "Tecnologia em Saúde",
@@ -30,8 +31,9 @@ export const metadata = {
     "Hospital"
   ],
   openGraph: {
-    title: "Amiko Soluções - Tecnologia Hospitalar Inteligente | SAHRA Assistente Hospitalar",
-    description: "Saiba como a Amiko Soluções transforma a gestão hospitalar com inovações como o SAHRA, um assistente hospitalar inteligente, e o SIMOH, sistema de monitoramento eficiente.",
+    // title: "Amiko Soluções - Tecnologia Hospitalar Inteligente | MOARA Assistente Hospitalar",
+    title: "Amiko Soluções - MOARA Assistente Hospitalar",
+    description: "Soluções de software e hardware para melhoria de eficiência, fluxo de trabalho, gestão e experiência dos pacientes e colaboradores em hospitais, através das soluções: MOARA, SIMOH e SOTEH!",
     url: "https://www.amikosolucoes.com",
     type: "website",
     images: [
@@ -73,8 +75,8 @@ export default function RootLayout({
           {JSON.stringify({
             "@context": "http://schema.org",
             "@type": "Product",
-            "name": "SAHRA Assistente Hospitalar",
-            "image": "https://amikosolucoes.com/assets/card%20sahra.png",
+            "name": "MOARA Assistente Hospitalar",
+            "image": "https://amikosolucoes.com/assets/card%20moara.png",
             "description": "Assistente virtual beira-leito com inteligência artificial. O paciente através da voz faz uma solicitação, ela entende a demanda, prioriza e encaminha para área específica (enfermagem, cozinha, limpeza), otimizando o tempo da equipe e reduzindo a espera por atendimento.",
             "brand": {
               "@type": "Organization",

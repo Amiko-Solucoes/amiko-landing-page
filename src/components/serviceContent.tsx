@@ -64,7 +64,7 @@ export function ServiceContent({ variant = "primary" }: ServiceContentProps) {
   return (
     <div className={twMerge(serviceStyles({ variant }), "flex flex-col gap-10")}>
       <div className="flex flex-col gap-2">
-        <span className="font-bold text-6xl">{content.title}</span>
+        <h1 className="font-bold text-6xl">{content.title}</h1>
         <span className="text-sky-900 font-bold text-2xl">{content.subtitle}</span>
         <span className="text-sky-900 text-lg">{content.description}</span>
       </div>
@@ -74,7 +74,7 @@ export function ServiceContent({ variant = "primary" }: ServiceContentProps) {
         </a>
       </div>
       <div className={footerStyles({ variant })}>
-        <span className="text-white text-lg md:text-2xl px-4">{content.footer}</span>
+        <h2 className="text-white text-lg md:text-2xl px-4">{content.footer}</h2>
       </div>
     </div>
   );

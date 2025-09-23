@@ -24,7 +24,7 @@ export default function Feedbacks(){
   return (
     <div id="feedbacks" className="flex flex-col items-center justify-center">
       <div className="bg-sky-900 flex items-center justify-center h-32 w-full">
-        <span className="text-3xl text-white">Depoimentos</span>
+        <h1 className="text-3xl text-white">Depoimentos</h1>
       </div>  
       <div className=" flex py-8 px-8 gap-16 flex-col items-center justify-center">
         <Carousel

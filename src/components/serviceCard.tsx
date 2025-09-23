@@ -47,16 +47,17 @@ const TextStyle = tv({
 interface CardVariantProps {
   variant?: 'primary' |'secondary' | 'tertiary';
   iconSrc: string;
+  iconAlt: string;
   title: string;
   description: string;
 }
 
-export function ServiceCard ({variant = "primary", iconSrc, title, description}: CardVariantProps) {
+export function ServiceCard ({variant = "primary", iconSrc, iconAlt, title, description}: CardVariantProps) {
   return (
     <>
      <div className="hover:-translate-y-4 transition-transform flex flex-col justify-center items-center">
         <div className={IconStyle({ variant })}>
-          <Image src={iconSrc} alt="" width={40} height={40}/>
+          <Image src={iconSrc} alt={iconAlt} width={40} height={40}/>
         </div>
         <div className={twMerge(cardsStyle({ variant }), TextStyle({ variant }))}>
           <span className="font-bold text-xl">{title}</span>

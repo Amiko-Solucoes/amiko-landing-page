@@ -4,7 +4,7 @@ export default function MoaraInfo(){
   return (
     <div id="the_moara" >
       <div className="bg-sky-900 flex items-center justify-center h-32 w-full">
-        <span className="text-3xl text-white">A MOARA</span>
+        <h1 className="text-3xl text-white">A MOARA</h1>
       </div>  
       <div className="w-full flex flex-col-reverse md:flex-row justify-center items-center gap-10 py-10 px-4 md:px-8">
         <div className="flex flex-col gap-10 max-w-2xl px-6">

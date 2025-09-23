@@ -15,7 +15,7 @@ export default function FeedbackRedirect() {
 
   return (
     <main className="flex flex-col items-center justify-center w-screen text-center h-screen bg-sky-900 text-white">
-      <h1 className="text-3xl font-bold">SUGESTÕES E FEEDBACKS</h1>
+      <span className="text-3xl font-bold">SUGESTÕES E FEEDBACKS</span>
     </main>
   );
 }

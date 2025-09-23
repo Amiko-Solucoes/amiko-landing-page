@@ -6,7 +6,7 @@ export default function Services(){
   return (
     <div id="services" className="flex flex-col justify-center items-center">
       <div className="bg-sky-900 flex flex-col items-center justify-center h-32 w-full">
-        <h1 className="text-3xl text-white mb-4">Nossos Serviços</h1>
+        <span className="text-3xl text-white mb-4">Nossos Serviços</span>
         <div className="flex gap-10 ">
           <div className="w-5 h-5 rounded-full bg-sky-400" />
           <div className="w-5 h-5 rounded-full bg-green-500" />
@@ -16,11 +16,11 @@ export default function Services(){
       <div className="flex flex-col py-8 px-8 gap-14 justify-center items-center max-w-[1540px]">
         <div id="moara" className="flex flex-col gap-10 justify-center items-center">
           <div className="flex justify-center">
-            <Image src="/logo-sahra.svg" alt="" width={150} height={150}/>
+            <Image src="/logo-sahra.svg" alt="Logo do Serviço Sahra" width={150} height={150}/>
           </div>
           <div className="w-[80%] flex flex-col gap-10 justify-center items-center">
             <ServiceContent variant="primary"/>
-            <Image src="/cover 1.svg" alt="" width={400} height={300}/>
+            <Image src="/cover 1.svg" alt="Capa do Serviço Sahra" width={400} height={300}/>
             <div className="flex flex-wrap items-center justify-center lg:justify-between w-full gap-4">
               <ServiceCard iconAlt="Equipe Otimizada" variant="primary" iconSrc="/sahra-card-1.svg" title="Equipe Otimizada" description="Apenas a equipe responsável por aquele tipo de solicitação receberá o chamado, evitando ocupar outras equipes com tarefas que não são de suas especialidades."/>
               <ServiceCard iconAlt="Gestão Inteligente" variant="primary" iconSrc="/sahra-card-2.svg" title="Gestão Inteligente" description="Entregaremos dados assertivos e reais dos atendimentos, possibilitando a tomada de decisões embasadas pela realidade do setor. Possibilitando melhor gestão de desempenho em tempo real."/>
@@ -31,11 +31,11 @@ export default function Services(){
 
         <div id="simoh" className="flex flex-col gap-10 justify-center items-center">
           <div className="flex justify-center">
-            <Image src="/logo-simoh.svg" alt="" width={150} height={150}/>
+            <Image src="/logo-simoh.svg" alt="Logo do Serviço Simoh" width={150} height={150}/>
           </div>
           <div className="w-[80%] flex flex-col gap-10 justify-center items-center">
             <ServiceContent variant="secondary"/>
-            <Image src="/simoh_img_section.svg" alt="" width={400} height={300}/>
+            <Image src="/simoh_img_section.svg" alt="Imagem do Serviço Simoh" width={400} height={300}/>
             <div className="flex flex-wrap items-center justify-center lg:justify-between w-full gap-4">
               <ServiceCard iconAlt="Apoio à Tomada de Decisões" variant="secondary" iconSrc="/simoh-card-1.svg" title="Apoio à Tomada de Decisões" description="Fornece insights valiosos para a gestão hospitalar, facilitando a tomada de decisões embasadas em informações confiáveis e atualizadas."/>
               <ServiceCard iconAlt="Monitoramento Abrangente" variant="secondary" iconSrc="/simoh-card-2.svg" title="Monitoramento Abrangente" description="Permite o monitoramento de diversas áreas e equipamentos hospitalares, garantindo um ambiente seguro e funcional para pacientes e equipe médica."/>
@@ -46,7 +46,7 @@ export default function Services(){
 
         <div id="soteh" className="flex flex-col gap-10 justify-center items-center">
           <div className="flex justify-center">
-            <Image src="/logo-soteh.svg" alt="" width={150} height={150}/>
+            <Image src="/logo-soteh.svg" alt="Logo do Serviço Soteh" width={150} height={150}/>
           </div>
           <div className="w-[80%] flex flex-col gap-10 justify-center items-center">
             <ServiceContent variant="tertiary"/>

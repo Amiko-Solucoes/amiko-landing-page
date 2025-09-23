@@ -5,7 +5,7 @@ import Script from "next/script";
 export const metadata = {
   // title: "Amiko Soluções - Tecnologia Hospitalar Inteligente | MOARA Assistente Hospitalar",
   title: "Amiko Soluções - MOARA Assistente Hospitalar",
-  description: "Soluções de software e hardware para melhoria de eficiência, fluxo de trabalho, gestão e experiência dos pacientes e colaboradores em hospitais, através das soluções: MOARA, SIMOH e SOTEH!",
+  description: "Soluções de software e hardware para melhoria de eficiência, fluxo de trabalho, gestão e experiência dos pacientes e colaboradores em hospitais, conheça a Amiko",
   keywords: [
     "Amiko",
     "Amiko Soluções",

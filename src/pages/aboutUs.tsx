@@ -4,7 +4,7 @@ export default function AboutUs(){
   return (
     <div id="aboutUs" className="flex flex-col items-center justify-center bg-about_bg bg-no-repeat bg-cover">
       <div className="bg-sky-900 flex items-center justify-center h-32 w-full">
-        <h1 className="text-3xl text-white">Quem Somos?</h1>
+        <span className="text-3xl text-white">Quem Somos?</span>
       </div>  
       <div className="max-w-[1540px] flex flex-col md:flex-row py-8 px-8 gap-16 justify-center">
         <div className="md:max-w-[60%] flex flex-col justify-between text-lg gap-4">

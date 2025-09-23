@@ -48,7 +48,7 @@ export default function Contact(){
   return (
     <div id="contact">
       <div className="bg-sky-900 flex items-center justify-center h-32">
-        <h1 className="text-3xl text-white">Entre em contato</h1>
+        <span className="text-3xl text-white">Entre em contato</span>
       </div>  
       <div className="flex py-8 px-8 gap-14 justify-center items-center relative top-[80px]">
         <div className="flex flex-col md:flex-row md:w-[70%] gap-4 bg-white shadow-2xl rounded-[8px]">

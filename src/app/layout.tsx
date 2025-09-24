@@ -60,6 +60,80 @@ export default function RootLayout({
       <link rel="page icon" href="\favicon.ico" />
       {/* biome-ignore lint/style/noUnusedTemplateLiteral: <explanation> */}
 
+      <script type="application/ld+json">
+        {JSON.stringify(
+          {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "MOARA - Assistente Virtual Beira-Leito",
+            "image": "https://amikosolucoes.com.br/assets/moara.jpg",
+            "description": "MOARA é uma assistente virtual beira-leito desenvolvida para hospitais e instituições de saúde. Ela otimiza o tempo de atendimento, facilita a comunicação entre pacientes e equipe e melhora a experiência hospitalar.",
+            "brand": {
+              "@type": "Brand",
+              "name": "Amiko Soluções"
+            },
+            "sku": "MOARA-001",
+            "category": "Assistente Virtual Hospitalar",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "5.0",
+              "reviewCount": "7"
+            },
+            "review": [
+              {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "Alexandre Coelho" },
+                "datePublished": "2025-09-20",
+                "reviewBody": "O investimento em novas tecnologias e parcerias com startups que possam melhorar ainda mais a jornada do cliente, aprimorando sua experiência, são fundamentais para o futuro da saúde. No HNSD isso será frequente, já que aliamos a tradição do nosso hospital à inovação no cuidado como uma das metas para crescimento.",
+                "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1" }
+              },
+              {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "Joyce Cristina" },
+                "datePublished": "2025-09-20",
+                "reviewBody": "Estamos utilizando o sistema MOARA e está sendo muito útil pra nosso trabalho, facilita e otimiza nossas funções. O paciente solicita algo e pelo sistema já conseguimos ver o que ele está precisando, sem a necessidade de ir até o quarto duas vezes. Assim atendemos o paciente com maior agilidade. Não tinha conhecimento desse sistema em hospitais. Adorei a ideia.",
+                "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1" }
+              },
+              {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "Bianca Sofia" },
+                "datePublished": "2025-09-20",
+                "reviewBody": "É uma tecnologia que não se vê em qualquer lugar. Achei muito prático, principalmente porque vai fazer com que a gente seja atendida mais rápido. Já estamos muito satisfeitas com o atendimento humanizado que recebemos aqui, agora vai melhorar ainda mais.",
+                "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1" }
+              },
+              {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "Lo-Ami" },
+                "datePublished": "2025-09-20",
+                "reviewBody": "Tive o privilégio de ser o primeiro acompanhante a testar, e foi uma honra. Acredito que vai melhorar demais a interação entre hospital, acompanhante e paciente. Hoje eu estava com paciente e não podia deixar ele sozinho, ai mandei na MOARA pedindo um suco. Foi super rápido e logo as meninas já levaram para mim. O sistema veio para agregar, e muito!",
+                "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1" }
+              },
+              {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "Emilene" },
+                "datePublished": "2025-09-20",
+                "reviewBody": "Sou funcionária da Santa Casa de Passos. Essa semana foi instalada a MOARA, que vai contribuir muito, tanto para o paciente quanto para os colaboradores da enfermagem e hotelaria, otimizando o tempo de atendimento. Os pacientes que já utilizaram o sistema estão encantados com a inovação. Parabéns a todos os envolvidos!",
+                "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1" }
+              },
+              {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "Bruno Moreira" },
+                "datePublished": "2025-09-20",
+                "reviewBody": "Nosso objetivo é que a equipe assistencial passe mais tempo cuidando das pessoas e menos tempo com burocracias, realizando um atendimento cada vez mais personalizado, que é o futuro da medicina. Estamos montando uma verdadeira jornada de cuidados de saúde tecnológica.",
+                "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1" }
+              },
+              {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "Bruna de Oliveira" },
+                "datePublished": "2025-09-20",
+                "reviewBody": "A tecnologia MOARA tem facilitado muito nosso trabalho. É um aparelho fácil de utilizar, então a adaptação tem sido bem tranquila. Quando o paciente nos chama com um problema, a gente já pode chegar com uma solução.",
+                "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1" }
+              }
+            ]
+          }
+        )}
+      </script>
+
       <Script 
         id="ms-clarity-script"
         strategy="afterInteractive"

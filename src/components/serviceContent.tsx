@@ -1,6 +1,7 @@
 import { twMerge } from 'tailwind-merge';
 import { tv } from 'tailwind-variants';
 import { Button } from './ui/button';
+import { useTranslation } from 'react-i18next';
 
 const serviceStyles = tv({
   base: "flex flex-col gap-2",
@@ -35,27 +36,27 @@ interface ServiceContentProps {
 }
 
 export function ServiceContent({ variant = "primary" }: ServiceContentProps) {
+
+  const { t } = useTranslation();
+
   const texts = {
     primary: {
-      title: "MOARA",
-      subtitle: "A Revolução da Assistência Hospitalar",
-      description:
-        "A MOARA é a assistente virtual beira-leito com inteligência artificial projetada para elevar o padrão da assistência hospitalar. Com a MOARA, o paciente pode realizar solicitações utilizando apenas sua voz, eliminando barreiras de comunicação e facilitando a interação com a equipe assistencial, uma vez que a assistente também prioriza e encaminha as solicitações para a área especifica, agilizando o processo de atendimento.",
-      footer: "Sistema Amiko de Hospitalidade",
+      title: t("services.s1.t1"),
+      subtitle: t("services.s1.t2"),
+      description: t("services.s1.p1"),
+      footer: t("services.s1.t3"),
     },
     secondary: {
-      title: "SIMOH",
-      subtitle: "Monitoramento Hospitalar Inteligente",
-      description:
-        "O SIMOH é um sistema inovador de monitoramento hospitalar projetado para áreas que exigem controle contínuo. Com o SIMOH, processos manuais de verificação são reduzidos drasticamente, permitindo um monitoramento eficiente e preciso em tempo real. Este sistema gera indicadores cruciais que oferecem insights valiosos para a gestão hospitalar, facilitando a tomada de decisões embasadas em dados confiáveis. Além disso, o SIMOH possibilita o monitoramento de diversas áreas e equipamentos, garantindo um ambiente hospitalar seguro e funcional.",
-      footer: "Sistemas de Monitoramento Hospitalar",
+      title: t("services.s2.t1"),
+      subtitle: t("services.s2.t2"),
+      description: t("services.s2.p1"),
+      footer: t("services.s2.t3"),
     },
     tertiary: {
-      title: "SOTEH",
-      subtitle: "A Inovação Personalizada para Saúde",
-      description:
-        "Desenvolvemos soluções personalizadas e sob demanda para os desafios únicos enfrentados nos ambientes hospitalares. Seja através do desenvolvimento de softwares ou hardwares especializados, nossa abordagem visa melhorar significativamente a eficiência e qualidade dos cuidados de saúde prestados. Ao focar em soluções adaptadas as necessidades específicas de cada instituição de saúde, conseguimos resolver problemas que muitas vezes são negligenciados por soluções genéricas.",
-      footer: "Soluções Tecnológicas Hospitalares",
+      title: t("services.s3.t1"),
+      subtitle: t("services.s3.t2"),
+      description: t("services.s3.p1"),
+      footer: t("services.s3.t3"),
     },
   };
 
@@ -70,7 +71,7 @@ export function ServiceContent({ variant = "primary" }: ServiceContentProps) {
       </div>
       <div className={`${variant === 'primary' ? 'flex' : 'hidden'} justify-center`}>
         <a href="#the_moara">
-          <Button variant="outline" className="rounded-[8px] text-base border-sky-900 text-sky-900 hover:bg-sky-900 hover:text-white">Saiba Mais Sobre a MOARA</Button>
+          <Button variant="outline" className="rounded-[8px] text-base border-sky-900 text-sky-900 hover:bg-sky-900 hover:text-white">{t("services.s1.b1")}</Button>
         </a>
       </div>
       <div className={footerStyles({ variant })}>

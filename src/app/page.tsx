@@ -38,7 +38,7 @@ export default function Home() {
     
       <div className="flex flex-col items-center justify-center bg-white">
         <div className="flex flex-col items-center ">
-          <div className="fixed z-[100] w-full">
+          <div className="fixed z-[40] w-full">
               <Header />
           </div>
           <div className="pt-20 bg-[#F3FCFF]">

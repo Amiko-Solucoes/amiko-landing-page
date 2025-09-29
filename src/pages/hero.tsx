@@ -1,15 +1,19 @@
 import { HeroButton } from "@/components/heroButton";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 export default function Hero(){
+
+  const { t } = useTranslation()
+
   return (
     <div className="bg-hero_bg flex flex-col items-center justify-center bg-cover bg-no-repeat">
       <div id="hero" className="max-w-[1540px] bg-no-repeat bg-cover min-h-[500px] flex flex-col px-4 md:px-8 py-8 md:flex-row md:justify-between items-center transition-all">
         <div className="flex flex-col gap-4 md:gap-8 md:w-[40%]">
           <div className="flex flex-col">
-            <span className="text-5xl md:text-6xl font-bold text-sky-900">Olá!</span>
-            <h1 className="text-5xl md:text-6xl font-bold text-sky-900">Somos a Amiko.</h1>
-            <span className="text-2xl md:text-4xl text-sky-800">onde a inovação e o cuidado se encontram!</span> 
+            <span className="text-5xl md:text-6xl font-bold text-sky-900">{t("hero.t1")}</span>
+            <h1 className="text-5xl md:text-6xl font-bold text-sky-900">{t("hero.t2")}</h1>
+            <span className="text-2xl md:text-4xl text-sky-800">{t("hero.t3")}</span>
           </div>
           <HeroButton />
         </div>

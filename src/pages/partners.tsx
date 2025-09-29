@@ -7,12 +7,14 @@ import {
 } from "@/components/ui/carousel"
 import Image from "next/image"
 import Autoplay from 'embla-carousel-autoplay'
-
+import { useTranslation } from "react-i18next"
 export default function Partners(){
+
+  const { t } = useTranslation();
   return (
     <div id="partners" >
       <div className="bg-sky-900 flex items-center justify-center h-32 w-full">
-        <span className="text-3xl text-white">Parceiros</span>
+        <span className="text-3xl text-white">{t("partners.t1")}</span>
       </div>  
       <div className="flex flex-col md:flex-row py-8 px-8 gap-16 justify-center">
         <Carousel

@@ -1,12 +1,16 @@
 import { ServiceCard } from "@/components/serviceCard";
 import { ServiceContent } from "@/components/serviceContent";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 export default function Services(){
+
+  const { t } = useTranslation()
+
   return (
     <div id="services" className="flex flex-col justify-center items-center">
       <div className="bg-sky-900 flex flex-col items-center justify-center h-32 w-full">
-        <span className="text-3xl text-white mb-4">Nossos Serviços</span>
+        <span className="text-3xl text-white mb-4">{t("services.t1")}</span>
         <div className="flex gap-10 ">
           <div className="w-5 h-5 rounded-full bg-sky-400" />
           <div className="w-5 h-5 rounded-full bg-green-500" />
@@ -22,9 +26,9 @@ export default function Services(){
             <ServiceContent variant="primary"/>
             <Image src="/cover 1.svg" alt="Capa do Serviço Sahra" width={400} height={300}/>
             <div className="flex flex-wrap items-center justify-center lg:justify-between w-full gap-4">
-              <ServiceCard iconAlt="Equipe Otimizada" variant="primary" iconSrc="/sahra-card-1.svg" title="Equipe Otimizada" description="Apenas a equipe responsável por aquele tipo de solicitação receberá o chamado, evitando ocupar outras equipes com tarefas que não são de suas especialidades."/>
-              <ServiceCard iconAlt="Gestão Inteligente" variant="primary" iconSrc="/sahra-card-2.svg" title="Gestão Inteligente" description="Entregaremos dados assertivos e reais dos atendimentos, possibilitando a tomada de decisões embasadas pela realidade do setor. Possibilitando melhor gestão de desempenho em tempo real."/>
-              <ServiceCard iconAlt="Fluxo Inteligente" variant="primary" iconSrc="/sahra-card-3.svg" title="Fluxo Inteligente" description="Cada tipo de solicitação pode ser enviada à equipe correspondente, além de já conter exatamente o que o paciente solicitou, evitando visitas desnecessárias ao quarto."/>
+              <ServiceCard iconAlt={t("services.s1.c1.t")} variant="primary" iconSrc="/sahra-card-1.svg" title={t("services.s1.c1.t")} description={t("services.s1.c1.p")}/>
+              <ServiceCard iconAlt={t("services.s1.c2.t")} variant="primary" iconSrc="/sahra-card-2.svg" title={t("services.s1.c2.t")} description={t("services.s1.c2.p")}/>
+              <ServiceCard iconAlt={t("services.s1.c3.t")} variant="primary" iconSrc="/sahra-card-3.svg" title={t("services.s1.c3.t")} description={t("services.s1.c3.p")}/>
             </div>
           </div>
         </div>
@@ -37,9 +41,9 @@ export default function Services(){
             <ServiceContent variant="secondary"/>
             <Image src="/simoh_img_section.svg" alt="Imagem do Serviço Simoh" width={400} height={300}/>
             <div className="flex flex-wrap items-center justify-center lg:justify-between w-full gap-4">
-              <ServiceCard iconAlt="Apoio à Tomada de Decisões" variant="secondary" iconSrc="/simoh-card-1.svg" title="Apoio à Tomada de Decisões" description="Fornece insights valiosos para a gestão hospitalar, facilitando a tomada de decisões embasadas em informações confiáveis e atualizadas."/>
-              <ServiceCard iconAlt="Monitoramento Abrangente" variant="secondary" iconSrc="/simoh-card-2.svg" title="Monitoramento Abrangente" description="Permite o monitoramento de diversas áreas e equipamentos hospitalares, garantindo um ambiente seguro e funcional para pacientes e equipe médica."/>
-              <ServiceCard iconAlt="Redução de Erros e incidentes" variant="secondary" iconSrc="/simoh-card-3.svg" title="Redução de Erros e incidentes" description="Ao detectar problemas de forma precoce, ajude a minimizar erros a incidentes, promovendo a segurança dos pacientes e a eficiência operacional do hospital."/>
+              <ServiceCard iconAlt={t("services.s2.c1.t")} variant="secondary" iconSrc="/simoh-card-1.svg" title={t("services.s2.c1.t")} description={t("services.s2.c1.p")}/>
+              <ServiceCard iconAlt={t("services.s2.c2.t")} variant="secondary" iconSrc="/simoh-card-2.svg" title={t("services.s2.c2.t")} description={t("services.s2.c2.p")}/>
+              <ServiceCard iconAlt={t("services.s2.c3.t")} variant="secondary" iconSrc="/simoh-card-3.svg" title={t("services.s2.c3.t")} description={t("services.s2.c3.p")}/>
             </div>
           </div>
         </div>
@@ -56,9 +60,9 @@ export default function Services(){
               <Image src="/soteh-3.svg" alt="" width={400} height={268} className="md:w-1/4"/>
             </div>
             <div className="flex flex-wrap items-center justify-center lg:justify-between w-full gap-4">
-              <ServiceCard iconAlt="Solução sob demanda" variant="tertiary" iconSrc="/soteh-card-1.svg" title="Solução sob demanda" description="Fornece insights valiosos para a gestão hospitalar, facilitando a tomada de decisões embasadas em informações confiáveis e atualizadas."/>
-              <ServiceCard iconAlt="Melhoria de processos internos" variant="tertiary" iconSrc="/soteh-card-2.svg" title="Melhoria de processos internos" description="Permite o monitoramento de diversas áreas e equipamentos hospitalares, garantindo um ambiente seguro e funcional para pacientes e equipe médica."/>
-              <ServiceCard iconAlt="Soluções personalizadas" variant="tertiary" iconSrc="/soteh-card-3.svg" title="Soluções personalizadas" description="Ao detectar problemas de forma precoce, ajude a minimizar erros a incidentes, promovendo a segurança dos pacientes e a eficiência operacional do hospital."/>
+              <ServiceCard iconAlt={t("services.s3.c1.t")} variant="tertiary" iconSrc="/soteh-card-1.svg" title={t("services.s3.c1.t")} description={t("services.s3.c1.p")}/>
+              <ServiceCard iconAlt={t("services.s3.c2.t")} variant="tertiary" iconSrc="/soteh-card-2.svg" title={t("services.s3.c2.t")} description={t("services.s3.c2.p")}/>
+              <ServiceCard iconAlt={t("services.s3.c3.t")} variant="tertiary" iconSrc="/soteh-card-3.svg" title={t("services.s3.c3.t")} description={t("services.s3.c3.p")}/>
             </div>
           </div>
         </div>

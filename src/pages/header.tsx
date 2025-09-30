@@ -1,3 +1,5 @@
+"use client"
+
 import { MobileMenu } from "@/components/mobileMenu"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import Image from "next/image"

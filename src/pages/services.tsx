@@ -1,3 +1,5 @@
+"use client"
+
 import { ServiceCard } from "@/components/serviceCard";
 import { ServiceContent } from "@/components/serviceContent";
 import Image from "next/image";

@@ -1,3 +1,5 @@
+"use client"
+
 import { twMerge } from 'tailwind-merge';
 import { tv } from 'tailwind-variants';
 import { Button } from './ui/button';

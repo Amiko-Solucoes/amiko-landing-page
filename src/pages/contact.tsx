@@ -5,6 +5,8 @@ import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { toast, Toaster } from 'sonner'
 import { useTranslation } from 'react-i18next'
+import ReCAPTCHA  from "react-google-recaptcha"
+import { useRef, useState } from 'react'
 
 const formsResponse = z.object({
   nome: z.string().nonempty().min(2, {message: 'Porfavor entre com seu nome'}),
@@ -19,6 +21,35 @@ export default function Contact(){
   const {register, handleSubmit, reset, formState} = useForm<FormsResponse>({
     resolver: zodResolver(formsResponse),
   })
+
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
+  const [isVerified, setIsVerified] = useState(false);
+
+  async function handleCaptchaSubmission(token: string | null) {
+    try {
+      if (token) {
+        await fetch("/api", {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ token }),
+        });
+        setIsVerified(true);
+      }
+    } catch (error) {
+      setIsVerified(false);
+    }
+  }
+
+  const handleChange = (token: string | null) => {
+    handleCaptchaSubmission(token);
+  }
+
+  function handleExpired() {
+    setIsVerified(false);
+  }
 
   const { t } = useTranslation();
 
@@ -126,10 +157,16 @@ export default function Contact(){
               </div>
 
               <div className="flex justify-center">
+                <ReCAPTCHA
+                  ref={recaptchaRef}
+                  sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ""}
+                  onChange={handleChange}
+                  onExpired={handleExpired} 
+                />
                 <button
                   type="submit"
                   className="px-10 py-2 text-white bg-[#4FA6C0] rounded-[8px] shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-                  disabled={isLoading}
+                  disabled={isLoading || !isVerified}
                 >
                   {isLoading ? t("contact.form.button.sending") : t("contact.form.button")}
                 </button>

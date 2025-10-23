@@ -156,7 +156,7 @@ export default function Contact(){
                 />
               </div>
 
-              <div className="flex justify-center">
+              <div className="flex flex-col justify-center w-full items-center gap-3">
                 <ReCAPTCHA
                   ref={recaptchaRef}
                   sitekey={"6LeoqvQrAAAAAKoqc0bh1NZgrTWFJadYp5NSiwQE"}
@@ -165,7 +165,7 @@ export default function Contact(){
                 />
                 <button
                   type="submit"
-                  className="px-10 py-2 text-white bg-[#4FA6C0] rounded-[8px] shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                  className={`px-10 py-2 text-white bg-[#4FA6C0] w-full rounded-[8px] shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 ${(isLoading || !isVerified) ? 'opacity-50 cursor-not-allowed' : ''}`}
                   disabled={isLoading || !isVerified}
                 >
                   {isLoading ? t("contact.form.button.sending") : t("contact.form.button")}

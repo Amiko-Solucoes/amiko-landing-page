@@ -8,7 +8,7 @@ import Footer from "@/pages/footer";
 export default function ServicesPage() {
   return (
     <div className="flex flex-col items-center justify-center bg-white">
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center w-full">
         <div className="fixed z-[100] w-full">
           <Header />
         </div>

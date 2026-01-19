@@ -1,9 +1,14 @@
-"use client";
+
 import { WhatsAppButton } from "@/components/whatsappButton";
 import Header from "@/pages/header";
 import Services from "@/pages/services";
 import Footer from "@/pages/footer";
 
+
+export const metadata = {
+  title: "Serviços | Amiko Soluções",
+  description: "Conheça os serviços oferecidos pela Amiko Soluções para hospitais e clínicas.",
+};
 
 export default function ServicesPage() {
   return (

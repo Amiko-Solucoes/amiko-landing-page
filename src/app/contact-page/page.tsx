@@ -3,6 +3,10 @@ import Header from "@/pages/header";
 import Contact from "@/pages/contact";
 import Footer from "@/pages/footer";
 
+export const metadata = {
+  title: "Contato | Amiko Soluções",
+  description: "Entre em contato com a Amiko Soluções para hospitais e clínicas.",
+};
 export default function ContactPage() {
   return (
     <div className="flex flex-col items-center justify-center bg-white ">

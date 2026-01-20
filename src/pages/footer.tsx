@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 
 export default function Footer(){
   const { t } = useTranslation();
+  const year = new Date().getFullYear();
   return (
     <div className="bg-sky-900 flex flex-col gap-16 text-white pt-14 justify-center items-center">
       <div className="flex flex-col md:flex-row justify-center items-start gap-16 px-10 py-10 max-w-[1540px]">
@@ -35,7 +36,8 @@ export default function Footer(){
       <div className="flex flex-col w-full justify-center items-center py-2">
         <span className="font-bold pb-2 text-sm">{t("footer.c1")}</span>
         <div className="h-[1px] bg-white w-full" />
-        <span className="py-1">{t("footer.c2")}</span>
+        
+        <span className="py-1">{t("footer.c2").replace("{year}", year.toString())}</span>
       </div>
     </div>
   )

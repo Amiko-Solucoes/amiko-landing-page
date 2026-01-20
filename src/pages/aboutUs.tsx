@@ -12,7 +12,7 @@ export default function AboutUs(){
   return (
     <div id="aboutUs" className="flex flex-col items-center justify-center bg-about_bg bg-no-repeat bg-cover">
       <div className="bg-sky-900 flex items-center justify-center h-32 w-full">
-        <span className="text-3xl text-white">{t("about.t1")}</span>
+        <span className="text-3xl text-white"><h1>{t("about.t1")}</h1></span>
       </div>  
       <div className="max-w-[1540px] flex flex-col md:flex-row py-8 px-8 gap-16 justify-center">
         <div className="md:max-w-[60%] flex flex-col text-lg gap-4">
@@ -21,11 +21,11 @@ export default function AboutUs(){
             <span>{t("about.p2")}</span>
           </div>
           <div className="flex flex-col gap-2">
-            <span className="font-bold">{t("about.t2")}</span>
+            <span className="font-bold"><h2>{t("about.t2")}</h2></span>
             <span>{t("about.p3")}</span>
           </div>
           <div className="flex flex-col gap-2">
-            <span className="font-bold">{t("about.t3")}</span>
+            <span className="font-bold"><h2>{t("about.t3")}</h2></span>
             <span>{t("about.p4")}</span>
             <span className="font-semibold text-sky-900">{t("about.p5")}</span>
           </div>

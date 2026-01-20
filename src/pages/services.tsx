@@ -12,7 +12,7 @@ export default function Services(){
   return (
     <div id="services" className="flex flex-col justify-center items-center">
       <div className="bg-sky-900 flex flex-col items-center justify-center h-32 w-full">
-        <span className="text-3xl text-white mb-4">{t("services.t1")}</span>
+        <span className="text-3xl text-white mb-4"><h1>{t("services.t1")}</h1></span>
         <div className="flex gap-10 ">
           <div className="w-5 h-5 rounded-full bg-sky-400" />
           <div className="w-5 h-5 rounded-full bg-green-500" />
@@ -22,11 +22,11 @@ export default function Services(){
       <div className="flex flex-col py-8 px-8 gap-14 justify-center items-center max-w-[1540px]">
         <div id="moara" className="flex flex-col gap-10 justify-center items-center">
           <div className="flex justify-center">
-            <Image src="/logo-sahra.svg" alt="Logo do Serviço Sahra" width={150} height={150}/>
+            <Image src="/logo-sahra.svg" alt="Logo do Serviço Moara" width={150} height={150}/>
           </div>
           <div className="w-[80%] flex flex-col gap-10 justify-center items-center">
             <ServiceContent variant="primary"/>
-            <Image src="/cover 1.svg" alt="Capa do Serviço Sahra" width={400} height={300}/>
+            <Image src="/cover 1.svg" alt="Capa do Serviço Moara" width={400} height={300}/>
             <div className="flex flex-wrap items-center justify-center lg:justify-between w-full gap-4">
               <ServiceCard iconAlt={t("services.s1.c1.t")} variant="primary" iconSrc="/sahra-card-1.svg" title={t("services.s1.c1.t")} description={t("services.s1.c1.p")}/>
               <ServiceCard iconAlt={t("services.s1.c2.t")} variant="primary" iconSrc="/sahra-card-2.svg" title={t("services.s1.c2.t")} description={t("services.s1.c2.p")}/>

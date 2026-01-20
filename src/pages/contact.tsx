@@ -82,13 +82,13 @@ export default function Contact(){
   return (
     <div id="contact">
       <div className="bg-sky-900 flex items-center justify-center h-32">
-        <span className="text-3xl text-white">{t("contact.t1")}</span>
+        <h1 className="text-3xl text-white">{t("contact.t1")}</h1>
       </div>  
       <div className="flex py-8 px-8 gap-14 justify-center items-center relative top-[80px]">
         <div className="flex flex-col md:flex-row md:w-[70%] gap-4 bg-white shadow-2xl rounded-[8px]">
           <div className="flex flex-col md:max-w-[50%] gap-8 items-center md:items-start justify-between p-6">
-            <span className="text-sky-900 font-bold text-4xl">{t("contact.p1")}</span>
-            <span className="text-sky-900 text-3xl">{t("contact.p2")}</span>
+            <h2 className="text-sky-900 font-bold text-4xl">{t("contact.p1")}</h2>
+            <h2 className="text-sky-900 text-3xl">{t("contact.p2")}</h2>
             <div className="flex gap-10">
               <div className="w-10 h-10 rounded-full bg-sky-400 shadow-[0_0_20px_rgba(56,189,248,0.8)]" />
               <div className="w-10 h-10 rounded-full bg-green-500 shadow-[0_0_20px_rgba(34,197,94,0.8)]" />

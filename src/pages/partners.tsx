@@ -14,7 +14,7 @@ export default function Partners(){
   return (
     <div id="partners" >
       <div className="bg-sky-900 flex items-center justify-center h-32 w-full">
-        <span className="text-3xl text-white">{t("partners.t1")}</span>
+        <h1 className="text-3xl text-white">{t("partners.t1")}</h1>
       </div>  
       <div className="flex flex-col md:flex-row py-8 px-8 gap-16 justify-center">
         <Carousel

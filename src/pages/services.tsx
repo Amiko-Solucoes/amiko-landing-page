@@ -34,6 +34,7 @@ export default function Services(){
             </div>
           </div>
         </div>
+        
 
         <div id="simoh" className="flex flex-col gap-10 justify-center items-center">
           <div className="flex justify-center">

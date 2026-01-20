@@ -7,6 +7,7 @@ export default function MoaraInfo(){
 
   const { t } = useTranslation();
   return (
+    
     <div id="the_moara" >
       <div className="bg-sky-900 flex items-center justify-center h-32 w-full">
         <span className="text-3xl text-white">{t("moara.t")}</span>

@@ -72,7 +72,7 @@ export function ServiceContent({ variant = "primary" }: ServiceContentProps) {
         <span className="text-sky-900 text-lg">{content.description}</span>
       </div>
       <div className={`${variant === 'primary' ? 'flex' : 'hidden'} justify-center`}>
-        <a href="#the_moara">
+        <a href="/moara-assistente">
           <Button variant="outline" className="rounded-[8px] text-base border-sky-900 text-sky-900 hover:bg-sky-900 hover:text-white">{t("services.s1.b1")}</Button>
         </a>
       </div>

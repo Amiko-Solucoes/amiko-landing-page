@@ -45,7 +45,6 @@ export default function Home() {
             <Hero />
             <AboutUs />
             <Services />
-            <MoaraInfo />
             <Partners />
             <Feedbacks />
             <Contact />

@@ -71,11 +71,17 @@ export function ServiceContent({ variant = "primary" }: ServiceContentProps) {
         <h2 className="text-sky-900 font-bold text-2xl">{content.subtitle}</h2>
         <span className="text-sky-900 text-lg">{content.description}</span>
       </div>
+      
       <div className={`${variant === 'primary' ? 'flex' : 'hidden'} justify-center`}>
-        <a href="/moara-assistente">
-          <Button variant="outline" className="rounded-[8px] text-base border-sky-900 text-sky-900 hover:bg-sky-900 hover:text-white">{t("services.s1.b1")}</Button>
+        <a
+          href="/moara-assistente"
+          className="inline-block bg-white border border-sky-900 text-sky-900 font-bold py-2 px-6 rounded-[8px] shadow-sm hover:bg-sky-900 hover:text-white transition-colors duration-200 text-base"
+        >
+          Clique aqui para saber mais
         </a>
       </div>
+      
+      
       <div className={footerStyles({ variant })}>
         <h2 className="text-white text-lg md:text-2xl px-4">{content.footer}</h2>
       </div>

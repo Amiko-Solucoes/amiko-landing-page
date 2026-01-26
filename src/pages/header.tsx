@@ -23,23 +23,41 @@ export default function Header(){
 
         <div className="font-poppins flex flex-row gap-6 lg:gap-8">
           <ul className="text-sky-700 flex-row gap-8 items-center transition-all lg:flex hidden">
-            <li className="hover:text-sky-500 hover:cursor-pointer">
-              <a href="/#hero">{t("header.home")}</a>
+            <li className="hover:text-sky-500 hover:cursor-pointer group">
+              <a href="/#hero" className="relative">
+                {t("header.home")}
+                <span className="block h-[2px] w-0 group-hover:w-full transition-all duration-300 bg-sky-500 rounded-full mt-1 absolute left-0 bottom-[-6px]" />
+              </a>
             </li>
-            <li className="hover:text-sky-500 hover:cursor-pointer">
-              <a href="/#aboutUs">{t("header.about")}</a>
+            <li className="hover:text-sky-500 hover:cursor-pointer group">
+              <a href="/#aboutUs" className="relative">
+                {t("header.about")}
+                <span className="block h-[2px] w-0 group-hover:w-full transition-all duration-300 bg-sky-500 rounded-full mt-1 absolute left-0 bottom-[-6px]" />
+              </a>
             </li>
-            <li className="hover:text-sky-500 hover:cursor-pointer">
-              <a href="/#services">{t("header.services")}</a>
+            <li className="hover:text-sky-500 hover:cursor-pointer group">
+              <a href="/#services" className="relative">
+                {t("header.services")}
+                <span className="block h-[2px] w-0 group-hover:w-full transition-all duration-300 bg-sky-500 rounded-full mt-1 absolute left-0 bottom-[-6px]" />
+              </a>
             </li>
-            <li className="hover:text-sky-500 hover:cursor-pointer">
-              <a href="/#partners">{t("header.partners")}</a>
+            <li className="hover:text-sky-500 hover:cursor-pointer group">
+              <a href="/#partners" className="relative">
+                {t("header.partners")}
+                <span className="block h-[2px] w-0 group-hover:w-full transition-all duration-300 bg-sky-500 rounded-full mt-1 absolute left-0 bottom-[-6px]" />
+              </a>
             </li>
-            <li className="hover:text-sky-500 hover:cursor-pointer">
-              <a href="/#feedbacks">{t("header.feedbacks")}</a>
+            <li className="hover:text-sky-500 hover:cursor-pointer group">
+              <a href="/#feedbacks" className="relative">
+                {t("header.feedbacks")}
+                <span className="block h-[2px] w-0 group-hover:w-full transition-all duration-300 bg-sky-500 rounded-full mt-1 absolute left-0 bottom-[-6px]" />
+              </a>
             </li>
-            <li className="hover:text-sky-500 hover:cursor-pointer">
-              <a href="/#contact">{t("header.contact")}</a>
+            <li className="hover:text-sky-500 hover:cursor-pointer group">
+              <a href="/#contact" className="relative">
+                {t("header.contact")}
+                <span className="block h-[2px] w-0 group-hover:w-full transition-all duration-300 bg-sky-500 rounded-full mt-1 absolute left-0 bottom-[-6px]" />
+              </a>
             </li>
           </ul>
 

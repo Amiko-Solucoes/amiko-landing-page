@@ -39,8 +39,10 @@ export default function MoarePage() {
                   </section>
 
                   <div className="flex justify-center mt-6">
-                    <a href="/contact-page">
-                      <button className="bg-sky-900 text-white px-6 py-3 rounded-lg font-bold hover:bg-sky-700 transition">
+                    <a href="/contato">
+                      <button
+                        className="bg-white border border-sky-900 text-sky-900 font-bold px-6 py-3 rounded-[8px] shadow-sm hover:bg-sky-900 hover:text-white transition-colors duration-200"
+                      >
                         {t("moara.cta")}
                       </button>
                     </a>

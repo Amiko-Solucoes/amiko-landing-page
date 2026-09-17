@@ -5,7 +5,10 @@ import Footer from "@/pages/footer";
 
 export const metadata = {
   title: "Contato | Amiko Soluções",
-  description: "Entre em contato com a Amiko Soluções para hospitais e clínicas.",
+  description: "Fale com a Amiko Soluções e solicite uma demonstração da MOARA, do SIMOH ou do SOTEH para o seu hospital.",
+  alternates: {
+    canonical: "/contato",
+  },
 };
 export default function ContactPage() {
   return (
@@ -15,6 +18,7 @@ export default function ContactPage() {
           <Header />
         </div>
         <div className="pt-24 flex-1 w-full">
+        <h1 className="sr-only">Contato | Amiko Soluções</h1>
         <Contact />
         <WhatsAppButton />
         <Footer />

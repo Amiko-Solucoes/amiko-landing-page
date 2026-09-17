@@ -67,14 +67,14 @@ export function ServiceContent({ variant = "primary" }: ServiceContentProps) {
   return (
     <div className={twMerge(serviceStyles({ variant }), "flex flex-col gap-10")}>
       <div className="flex flex-col gap-2">
-        <h1 className="font-bold text-6xl">{content.title}</h1>
+        <h2 className="font-bold text-6xl">{content.title}</h2>
         <h2 className="text-sky-900 font-bold text-2xl">{content.subtitle}</h2>
         <span className="text-sky-900 text-lg">{content.description}</span>
       </div>
       
       <div className={`${variant === 'primary' ? 'flex' : 'hidden'} justify-center`}>
         <a
-          href="/moara-assistente"
+          href="/concierge-hospitalar"
           className="inline-block bg-white border border-sky-900 text-sky-900 font-bold py-2 px-6 rounded-[8px] shadow-sm hover:bg-sky-900 hover:text-white transition-colors duration-200 text-base"
         >
           Clique aqui para saber mais

@@ -14,7 +14,7 @@ export default function Partners(){
   return (
     <div id="partners" >
       <div className="bg-sky-900 flex items-center justify-center h-32 w-full">
-        <h1 className="text-3xl text-white">{t("partners.t1")}</h1>
+        <h2 className="text-3xl text-white">{t("partners.t1")}</h2>
       </div>  
       <div className="flex flex-col md:flex-row py-8 px-8 gap-16 justify-center">
         <Carousel
@@ -32,7 +32,7 @@ export default function Partners(){
             >
               <Image
                 src="/sebrae_logo.jpeg"
-                alt=""
+                alt="Sebrae"
                 width={200}
                 height={200}
               />
@@ -43,7 +43,7 @@ export default function Partners(){
             >
               <Image
                 src="/inatelstartup_logo.jpeg"
-                alt=""
+                alt="Inatel Startups"
                 width={200}
                 height={200}
               />
@@ -54,7 +54,7 @@ export default function Partners(){
             >
               <Image
                 src="/misericordia_logo.jpeg"
-                alt=""
+                alt="Santa Casa de Misericórdia de Passos"
                 width={200}
                 height={200}
               />
@@ -65,7 +65,7 @@ export default function Partners(){
             >
               <Image
                 src="/saolucas_logo.jpeg"
-                alt=""
+                alt="Hospital São Lucas"
                 width={200}
                 height={200}
               />
@@ -76,7 +76,7 @@ export default function Partners(){
             >
               <Image
                 src="/clinicas_logo.jpeg"
-                alt=""
+                alt="Hospital das Clínicas"
                 width={200}
                 height={200}
               />
@@ -87,7 +87,7 @@ export default function Partners(){
             >
               <Image
                 src="/fapemig_logo.jpeg"
-                alt=""
+                alt="Fapemig"
                 width={200}
                 height={200}
               />
@@ -98,7 +98,7 @@ export default function Partners(){
             >
               <Image
                 src="/iam_logo.jpeg"
-                alt=""
+                alt="IAM"
                 width={200}
                 height={200}
               />
@@ -109,7 +109,7 @@ export default function Partners(){
             >
               <Image
                 src="/centelha_logo.jpeg"
-                alt=""
+                alt="Centelha"
                 width={200}
                 height={200}
               />
@@ -120,7 +120,7 @@ export default function Partners(){
             >
               <Image
                 src="/senhoradores_logo.jpeg"
-                alt=""
+                alt="Hospital Nossa Senhora das Dores"
                 width={200}
                 height={200}
               />

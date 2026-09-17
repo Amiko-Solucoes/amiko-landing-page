@@ -2,3 +2,21 @@ User-agent: *
 Allow: /
 Disallow: /*?*utm_*
 Disallow: /*?*sessionid=*
+
+# Componentes internos expostos acidentalmente como rotas pelo Next.js Pages Router
+Disallow: /header
+Disallow: /footer
+Disallow: /hero
+Disallow: /moara
+Disallow: /services
+Disallow: /partners
+Disallow: /feedbacks
+Disallow: /contact
+Disallow: /aboutUs
+Disallow: /feedbackRedirect
+Disallow: /managament-report
+Disallow: /managament-report-scmp
+Disallow: /privacy-section
+Disallow: /terms-section
+
+Sitemap: https://www.amikosolucoes.com.br/sitemap.xml

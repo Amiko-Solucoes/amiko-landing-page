@@ -24,8 +24,8 @@ export default function MoaraInfo(){
             <span>{t("moara.p2")}</span>
           </div>
         </div>
-        <Image className="hidden md:block" src="moara_full.svg" alt="" width={180} height={350}/>
-        <Image className="md:hidden" src="moara_half.svg" alt="" width={120} height={250}/>
+        <Image className="hidden md:block" src="moara_full.svg" alt="MOARA, assistente virtual beira-leito da Amiko" width={180} height={350}/>
+        <Image className="md:hidden" src="moara_half.svg" alt="MOARA, assistente virtual beira-leito da Amiko" width={120} height={250}/>
       </div>
     </div>
   )

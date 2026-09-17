@@ -17,9 +17,9 @@ export function SotehComponent(){
           <div className="w-[80%] flex flex-col gap-10 justify-center items-center">
             <ServiceContent variant="tertiary"/>
             <div className="flex flex-col md:flex-row gap-3 justify-center items-center w-full px-2">
-              <Image src="/soteh-1.svg" alt="" width={400} height={268} className="md:w-1/4"/>
-              <Image src="/soteh-2.svg" alt="" width={400} height={268} className="md:w-2/4"/>
-              <Image src="/soteh-3.svg" alt="" width={400} height={268} className="md:w-1/4"/>
+              <Image src="/soteh-1.svg" alt="SOTEH: desenvolvimento de software sob medida" width={400} height={268} className="md:w-1/4"/>
+              <Image src="/soteh-2.svg" alt="SOTEH: desenvolvimento de hardware sob medida" width={400} height={268} className="md:w-2/4"/>
+              <Image src="/soteh-3.svg" alt="SOTEH: soluções tecnológicas hospitalares personalizadas" width={400} height={268} className="md:w-1/4"/>
             </div>
             <div className="flex flex-wrap items-center justify-center lg:justify-between w-full gap-4">
               <ServiceCard iconAlt={t("services.s3.c1.t")} variant="tertiary" iconSrc="/soteh-card-1.svg" title={t("services.s3.c1.t")} description={t("services.s3.c1.p")}/>

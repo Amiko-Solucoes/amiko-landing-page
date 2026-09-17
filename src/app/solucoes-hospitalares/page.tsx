@@ -6,8 +6,11 @@ import Footer from "@/pages/footer";
 
 
 export const metadata = {
-  title: "Serviços | Amiko Soluções",
-  description: "Conheça os serviços oferecidos pela Amiko Soluções para hospitais e clínicas.",
+  title: "Soluções Hospitalares: MOARA, SIMOH e SOTEH | Amiko Soluções",
+  description: "Conheça as soluções da Amiko para hospitais: MOARA (concierge hospitalar com IA), SIMOH (monitoramento IoT) e SOTEH (software e hardware sob medida) para tornar a operação hospitalar mais eficiente e humana.",
+  alternates: {
+    canonical: "/solucoes-hospitalares",
+  },
 };
 
 export default function ServicesPage() {
@@ -18,6 +21,7 @@ export default function ServicesPage() {
           <Header />
         </div>
         <div className="pt-24 w-full">
+        <h1 className="sr-only">Soluções Hospitalares da Amiko: MOARA, SIMOH e SOTEH</h1>
         <Services />
         <Footer />
         <WhatsAppButton />

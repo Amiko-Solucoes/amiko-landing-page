@@ -14,7 +14,7 @@ export default function Services(){
   return (
     <div id="services" className="flex flex-col justify-center items-center">
       <div className="bg-sky-900 flex flex-col items-center justify-center h-32 w-full">
-        <span className="text-3xl text-white mb-4"><h1>{t("services.t1")}</h1></span>
+        <span className="text-3xl text-white mb-4"><h2>{t("services.t1")}</h2></span>
         <div className="flex gap-10 ">
           <div className="w-5 h-5 rounded-full bg-sky-400" />
           <div className="w-5 h-5 rounded-full bg-green-500" />

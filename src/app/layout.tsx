@@ -3,9 +3,13 @@ import "./globals.css";
 import Script from "next/script";
 
 export const metadata = {
+  metadataBase: new URL("https://www.amikosolucoes.com.br"),
   // title: "Amiko Soluções - Tecnologia Hospitalar Inteligente | MOARA Assistente Hospitalar",
   title: "Amiko Soluções - MOARA Assistente Hospitalar",
   description: "Soluções de software e hardware para melhoria de eficiência, fluxo de trabalho, gestão e experiência dos pacientes e colaboradores em hospitais, conheça a Amiko",
+  alternates: {
+    canonical: "/",
+  },
   keywords: [
     "Amiko",
     "Amiko Soluções",
@@ -34,11 +38,11 @@ export const metadata = {
     // title: "Amiko Soluções - Tecnologia Hospitalar Inteligente | MOARA Assistente Hospitalar",
     title: "Amiko Soluções - MOARA Assistente Hospitalar",
     description: "Soluções de software e hardware para melhoria de eficiência, fluxo de trabalho, gestão e experiência dos pacientes e colaboradores em hospitais, através das soluções: MOARA, SIMOH e SOTEH!",
-    url: "https://www.amikosolucoes.com",
+    url: "https://www.amikosolucoes.com.br",
     type: "website",
     images: [
       {
-        url: "https://amikosolucoes.com/assets/Logo%20Amiko%20SVG%201.svg",
+        url: "https://www.amikosolucoes.com.br/amiko_logo_branca.svg",
         alt: "Logo da Amiko Soluções"
       }
     ]
@@ -150,7 +154,7 @@ export default function RootLayout({
             "@context": "http://schema.org",
             "@type": "Product",
             "name": "MOARA Assistente Hospitalar",
-            "image": "https://amikosolucoes.com/assets/card%20moara.png",
+            "image": "https://www.amikosolucoes.com.br/card_moara.svg",
             "description": "Assistente virtual beira-leito com inteligência artificial. O paciente através da voz faz uma solicitação, ela entende a demanda, prioriza e encaminha para área específica (enfermagem, cozinha, limpeza), otimizando o tempo da equipe e reduzindo a espera por atendimento.",
             "brand": {
               "@type": "Organization",
@@ -158,7 +162,7 @@ export default function RootLayout({
             },
             "offers": {
               "@type": "Offer",
-              "url": "https://amikosolucoes.com/#services",
+              "url": "https://www.amikosolucoes.com.br/#services",
               "priceCurrency": "BRL",
               "price": "1500.00",
               "availability": "http://schema.org/InStock",
@@ -173,11 +177,11 @@ export default function RootLayout({
             "@context": "http://schema.org",
             "@type": "Service",
             "serviceType": "IoT Hospitalar",
-            "image": "https://amikosolucoes.com/assets/card%20simoh.png",
+            "image": "https://www.amikosolucoes.com.br/card_simoh.svg",
             "provider": {
               "@type": "Organization",
               "name": "Amiko Soluções",
-              "url": "https://amikosolucoes.com/#services"
+              "url": "https://www.amikosolucoes.com.br/#services"
             },
             "areaServed": {
               "@type": "Place",
@@ -192,11 +196,11 @@ export default function RootLayout({
             "@context": "http://schema.org",
             "@type": "Service",
             "serviceType": "Desenvolvimento de Software para Saúde",
-            "image": "https://amikosolucoes.com/assets/card%20soteh.png",
+            "image": "https://www.amikosolucoes.com.br/card_soteh.svg",
             "provider": {
               "@type": "Organization",
               "name": "Amiko Soluções",
-              "url": "https://amikosolucoes.com/#services"
+              "url": "https://www.amikosolucoes.com.br/#services"
             },
             "areaServed": {
               "@type": "Place",
@@ -211,7 +215,7 @@ export default function RootLayout({
             "@context": "http://schema.org",
             "@type": "LocalBusiness",
             "name": "Amiko Soluções",
-            "image": "https://amikosolucoes.com/assets/Logo%20Amiko%20SVG%201.svg",
+            "image": "https://www.amikosolucoes.com.br/amiko_logo_branca.svg",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Av. João de Camargo, 510, INATEL",
@@ -222,7 +226,12 @@ export default function RootLayout({
             },
             "telephone": "+55-35-99996-8808",
             "openingHours": "Mo-Fr 08:00-18:00",
-            "priceRange": "$$$"
+            "priceRange": "$$$",
+            "sameAs": [
+              "https://www.instagram.com/amikosolucoes/",
+              "https://www.facebook.com/amikosolucoes/",
+              "https://www.linkedin.com/company/amikosolucoes"
+            ]
           })}
         </script>
       </head>

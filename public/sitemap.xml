@@ -6,140 +6,63 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.amikosolucoes.com.br/about-us</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.amikosolucoes.com.br/service</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.amikosolucoes.com.br/assistente-virtual</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.amikosolucoes.com.br/concierge-virtual</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.amikosolucoes.com.br/concierge-hospitalar</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.amikosolucoes.com.br/concierge-virtual-hospitalar</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.amikosolucoes.com.br/assistente-beira-leito</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.amikosolucoes.com.br/alexa-para-hospitais</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.amikosolucoes.com.br/hospitais-digitais</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.amikosolucoes.com.br/apoio-certificacao-ona</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.amikosolucoes.com.br/atendimento-ao-paciente</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.amikosolucoes.com.br/chamadas-de-enfermagem</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.amikosolucoes.com.br/qualidade-no-atendimento-ao-paciente</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.amikosolucoes.com.br/moara-assistente</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.amikosolucoes.com.br/moara-digital</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.amikosolucoes.com.br/moara-concierge</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
- <url>
-    <loc>https://www.amikosolucoes.com.br/gestao-hospitalar</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.amikosolucoes.com.br/comunicacao-hospitalar</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.amikosolucoes.com.br/seguranca-do-paciente</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.amikosolucoes.com.br/eficiencia-enfermagem</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.amikosolucoes.com.br/medicina-humanizada</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.amikosolucoes.com.br/monitoramente-em-tempo-real</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.amikosolucoes.com.br/solucoes-hospitalares</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.amikosolucoes.com.br/tecnologia-em-saude</loc>
+    <loc>https://www.amikosolucoes.com.br/experiencia-do-paciente</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.amikosolucoes.com.br/industria-brasileira-hospitalar</loc>
+    <loc>https://www.amikosolucoes.com.br/automacao-hospitalar</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://www.amikosolucoes.com.br/partners-testimonials</loc>
+    <loc>https://www.amikosolucoes.com.br/sobre-nos</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.amikosolucoes.com.br/contact-page</loc>
+    <loc>https://www.amikosolucoes.com.br/parceiros-e-depoimentos</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  <!-- Adicione outras páginas importantes aqui -->
+  <url>
+    <loc>https://www.amikosolucoes.com.br/contato</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.amikosolucoes.com.br/resultados</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.amikosolucoes.com.br/blog</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.amikosolucoes.com.br/blog/o-que-e-concierge-hospitalar-digital</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.amikosolucoes.com.br/blog/reduzir-chamados-desnecessarios-enfermagem</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.amikosolucoes.com.br/blog/como-medir-tempo-resposta-hospitalar</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>

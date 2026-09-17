@@ -8,7 +8,10 @@ import Footer from "@/pages/footer";
 
 export const metadata = {
   title: "Parceiros e Depoimentos | Amiko Soluções",
-  description: "Conheça os parceiros e depoimentos da Amiko Soluções para hospitais e clínicas.",
+  description: "Veja o que hospitais como a Santa Casa de Passos e o Hospital São Lucas dizem sobre a MOARA e conheça os parceiros da Amiko Soluções.",
+  alternates: {
+    canonical: "/parceiros-e-depoimentos",
+  },
 };
 
 export default function PartnersTestimonials() {
@@ -19,6 +22,7 @@ export default function PartnersTestimonials() {
           <Header />
         </div>
         <div className="pt-24 w-full">
+        <h1 className="sr-only">Parceiros e Depoimentos da Amiko Soluções</h1>
         <Partners />
         <Feedbacks />
         <WhatsAppButton />

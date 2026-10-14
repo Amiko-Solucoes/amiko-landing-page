@@ -1,22 +1,59 @@
+# Amiko Soluções — robots.txt
+# Todo o conteúdo público pode ser lido por buscadores e por assistentes de IA
+# (ChatGPT, Perplexity, Claude, Gemini, Copilot). Não bloqueie esses robôs.
+
 User-agent: *
 Allow: /
+Disallow: /api/
 Disallow: /*?*utm_*
 Disallow: /*?*sessionid=*
 
-# Componentes internos expostos acidentalmente como rotas pelo Next.js Pages Router
-Disallow: /header
-Disallow: /footer
-Disallow: /hero
-Disallow: /moara
-Disallow: /services
-Disallow: /partners
-Disallow: /feedbacks
-Disallow: /contact
-Disallow: /aboutUs
-Disallow: /feedbackRedirect
-Disallow: /managament-report
-Disallow: /managament-report-scmp
-Disallow: /privacy-section
-Disallow: /terms-section
+User-agent: GPTBot
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_*
+Disallow: /*?*sessionid=*
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_*
+Disallow: /*?*sessionid=*
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_*
+Disallow: /*?*sessionid=*
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_*
+Disallow: /*?*sessionid=*
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_*
+Disallow: /*?*sessionid=*
+
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_*
+Disallow: /*?*sessionid=*
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_*
+Disallow: /*?*sessionid=*
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_*
+Disallow: /*?*sessionid=*
 
 Sitemap: https://www.amikosolucoes.com.br/sitemap.xml

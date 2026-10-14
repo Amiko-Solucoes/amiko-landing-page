@@ -1,6 +1,13 @@
 import { WhatsAppButton } from "@/components/whatsappButton";
-import Header from "@/pages/header";
-import PrivacySection from "@/pages/privacy-section";
+import Header from "@/sections/header";
+import PrivacySection from "@/sections/privacy-section";
+import { pageMetadata } from "@/lib/site";
+
+export const metadata = pageMetadata({
+  title: "Política de privacidade",
+  description: "Política de privacidade e tratamento de dados pessoais da Amiko Soluções (LGPD).",
+  path: "/privacy",
+});
 
 export default function Privacy() {
   return (

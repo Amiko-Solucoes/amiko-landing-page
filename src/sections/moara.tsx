@@ -10,17 +10,17 @@ export default function MoaraInfo(){
     
     <div id="the_moara" >
       <div className="bg-sky-900 flex items-center justify-center h-32 w-full">
-        <span className="text-3xl text-white">{t("moara.t")}</span>
+        <h2 className="text-3xl text-white">{t("moara.t")}</h2>
       </div>  
       <div className="w-full flex flex-col-reverse md:flex-row justify-center items-center gap-10 py-10 px-4 md:px-8">
         <div className="flex flex-col gap-10 max-w-2xl px-6">
           <div className="flex flex-col gap-1">
-            <span className="text-sky-900 text-xl font-bold">{t("moara.t1")}</span>
+            <h3 className="text-sky-900 text-xl font-bold">{t("moara.t1")}</h3>
             <span>{t("moara.p1")}</span>
           </div>
 
           <div className="flex flex-col gap-1">
-            <span className="text-sky-900 text-xl font-bold">{t("moara.t2")}</span>
+            <h3 className="text-sky-900 text-xl font-bold">{t("moara.t2")}</h3>
             <span>{t("moara.p2")}</span>
           </div>
         </div>

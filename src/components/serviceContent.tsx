@@ -68,22 +68,22 @@ export function ServiceContent({ variant = "primary" }: ServiceContentProps) {
     <div className={twMerge(serviceStyles({ variant }), "flex flex-col gap-10")}>
       <div className="flex flex-col gap-2">
         <h2 className="font-bold text-6xl">{content.title}</h2>
-        <h2 className="text-sky-900 font-bold text-2xl">{content.subtitle}</h2>
+        <h3 className="text-sky-900 font-bold text-2xl">{content.subtitle}</h3>
         <span className="text-sky-900 text-lg">{content.description}</span>
       </div>
       
       <div className={`${variant === 'primary' ? 'flex' : 'hidden'} justify-center`}>
         <a
-          href="/concierge-hospitalar"
+          href="/moara"
           className="inline-block bg-white border border-sky-900 text-sky-900 font-bold py-2 px-6 rounded-[8px] shadow-sm hover:bg-sky-900 hover:text-white transition-colors duration-200 text-base"
         >
-          Clique aqui para saber mais
+          Conheça a MOARA, concierge hospitalar digital
         </a>
       </div>
       
       
       <div className={footerStyles({ variant })}>
-        <h2 className="text-white text-lg md:text-2xl px-4">{content.footer}</h2>
+        <p className="text-white text-lg md:text-2xl px-4 font-bold">{content.footer}</p>
       </div>
     </div>
   );

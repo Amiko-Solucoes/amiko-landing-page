@@ -1,18 +1,17 @@
 
 
 import { WhatsAppButton } from "@/components/whatsappButton";
-import Header from "@/pages/header";
-import Partners from "@/pages/partners";
-import Feedbacks from "@/pages/feedbacks";
-import Footer from "@/pages/footer";
+import Header from "@/sections/header";
+import Partners from "@/sections/partners";
+import Feedbacks from "@/sections/feedbacks";
+import Footer from "@/sections/footer";
+import { pageMetadata } from "@/lib/site";
 
-export const metadata = {
-  title: "Parceiros e Depoimentos | Amiko Soluções",
-  description: "Veja o que hospitais como a Santa Casa de Passos e o Hospital São Lucas dizem sobre a MOARA e conheça os parceiros da Amiko Soluções.",
-  alternates: {
-    canonical: "/parceiros-e-depoimentos",
-  },
-};
+export const metadata = pageMetadata({
+  title: "Parceiros e depoimentos sobre a MOARA",
+  description: "Veja o que equipes, pacientes e gestores da Santa Casa de Passos, Hospital São Lucas e outros hospitais dizem sobre a MOARA, e conheça os parceiros da Amiko Soluções.",
+  path: "/parceiros-e-depoimentos",
+});
 
 export default function PartnersTestimonials() {
   return (

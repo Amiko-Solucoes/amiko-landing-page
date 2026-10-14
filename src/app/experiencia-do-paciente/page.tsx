@@ -1,15 +1,14 @@
 import Image from "next/image";
-import Header from "@/pages/header";
-import Footer from "@/pages/footer";
+import Header from "@/sections/header";
+import Footer from "@/sections/footer";
 import { WhatsAppButton } from "@/components/whatsappButton";
+import { PASSOS, pageMetadata } from "@/lib/site";
 
-export const metadata = {
-  title: "Experiência do Paciente em Hospitais | Amiko Soluções",
-  description: "Como melhorar a experiência do paciente em hospitais com tecnologia: comunicação mais rápida, menos atrito na jornada de internação e dados reais sobre a operação hospitalar.",
-  alternates: {
-    canonical: "/experiencia-do-paciente",
-  },
-};
+export const metadata = pageMetadata({
+  title: "Experiência do paciente em hospitais: guia prático com tecnologia",
+  description: "Como melhorar a experiência do paciente em hospitais: comunicação mais rápida, atendimento beira-leito sem atrito e dados reais sobre cada pedido feito durante a internação.",
+  path: "/experiencia-do-paciente",
+});
 
 const faqs = [
   {
@@ -98,10 +97,10 @@ export default function ExperienciaDoPacientePage() {
             <div className="max-w-[900px] mx-auto px-6 flex flex-col gap-4 text-white">
               <h2 className="text-2xl font-bold">O que a tecnologia beira-leito pode mudar</h2>
               <p className="text-sky-100">
-                Na Santa Casa de Misericórdia de Passos (MG), entre agosto de 2024 e abril de 2025, solicitações que antes levavam de 16 a 22 minutos para chegar ao setor correto passaram a levar entre 3 e 10 minutos com o uso da MOARA como concierge digital — reduzindo a espera do paciente e dando à equipe mais visibilidade sobre cada pedido.
+                Na {PASSOS.hospital}, entre {PASSOS.periodo}, a MOARA registrou {PASSOS.chamados} solicitações de pacientes. Quando o canal passou a ser o WhatsApp, o uso subiu de {PASSOS.alaB.antes} para {PASSOS.alaB.depois} pedidos por dia na Ala B — sinal de que o paciente pede mais ajuda quando pedir é fácil. Os próprios pacientes resumiram: “muito melhor do que ficar esperando a campainha” e “dá sensação de que se preocupam com a gente”.
               </p>
               <p className="text-sky-200 text-sm">
-                Resultado observado nesse piloto específico; a magnitude do ganho varia conforme o hospital e o processo já existente.
+                Resultado observado nesse piloto específico; a magnitude varia conforme o hospital e o processo já existente.
               </p>
               <a href="/resultados" className="text-white font-bold hover:underline w-fit">Leia o case completo →</a>
             </div>
@@ -123,6 +122,7 @@ export default function ExperienciaDoPacientePage() {
             <h2 className="text-lg font-bold text-sky-900">Veja também</h2>
             <div className="flex flex-wrap gap-4 text-sky-700 underline">
               <a href="/concierge-hospitalar">Concierge hospitalar digital: MOARA</a>
+              <a href="/atendimento-beira-leito">Atendimento beira-leito</a>
               <a href="/automacao-hospitalar">Automação e eficiência operacional hospitalar</a>
               <a href="/solucoes-hospitalares">Todas as soluções da Amiko</a>
               <a href="/blog/como-medir-tempo-resposta-hospitalar">Como medir o tempo de resposta hospitalar</a>

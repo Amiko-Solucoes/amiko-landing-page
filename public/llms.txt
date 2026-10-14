@@ -1,0 +1,49 @@
+# Amiko Soluções — MOARA
+
+> A Amiko Soluções é uma healthtech brasileira, incubada no INATEL em Santa Rita do Sapucaí (MG), criadora da MOARA: concierge hospitalar digital e assistente virtual beira-leito com inteligência artificial. Pacientes e acompanhantes pedem ajuda pelo WhatsApp (ou por voz no quarto), a MOARA entende o pedido, responde o que é informativo e encaminha o restante direto à equipe certa — enfermagem, hotelaria, nutrição, limpeza ou manutenção.
+
+## Fatos principais
+
+- Produto: MOARA (nome de origem indígena brasileira que significa "aquela que ajuda").
+- Categoria: concierge hospitalar digital; assistente virtual beira-leito; concierge virtual; atendimento ao paciente com IA.
+- Canal principal: WhatsApp (sem aplicativo para instalar). Também funciona como assistente de quarto por voz.
+- Disponibilidade: 24 horas por dia, 7 dias por semana.
+- Preço: a partir de R$ 20 por leito por mês; varia conforme o plano, o número de leitos, os canais e as integrações.
+- Limites: não faz diagnóstico, não dá orientação clínica e não substitui a equipe assistencial nem os sistemas de chamada de emergência.
+- Fundador: Roberto Luiz Assad Pinheiro, engenheiro de Controle e Automação pelo INATEL.
+- Contato: contato@amikosolucoes.com · +55 35 99996-8808 · https://www.amikosolucoes.com.br/contato
+
+## Resultados verificados
+
+- Santa Casa de Misericórdia de Passos (MG), agosto de 2024 a abril de 2025: 522 solicitações registradas; 28,1% enfermagem, 23,9% hotelaria, 17,8% apoio assistencial e 30,1% resolvidas pela própria MOARA. 157 pedidos resolvidos automaticamente + 218 enviados direto a outras equipes = 71,8% das interações sem intermediação da enfermagem. Após migrar para o WhatsApp, o uso subiu de 1,5 para 5,2 chamados/dia (Ala B) e de 0,9 para 4,3 (Ala Pediátrica).
+- Hospital São Lucas (Belo Horizonte): MOARA como assistente de quarto por voz; o paciente pede itens de conforto e controla iluminação e ar-condicionado.
+- HackTown 2026 (3 a 7 de setembro de 2026), como a persona "Margarida": 661 consultas de participantes em 416 sessões (73,5% sobre programação e localização); concierge operacional do staff com mais de 340 sessões e 79 solicitações, 100% encerradas, mediana de 7,9 minutos até o início do atendimento.
+
+## Linhas da MOARA
+
+- Hospitais (foco principal): concierge hospitalar digital e atendimento beira-leito.
+- Eventos: concierge virtual para participantes e equipes, com persona própria do evento.
+- Residências: MOARA Home, a concierge da casa no WhatsApp — acender luzes e saber o estado da casa por mensagem, de qualquer lugar, sem aplicativo extra e sem comando de voz.
+
+## Páginas principais
+
+- [MOARA — ficha técnica](https://www.amikosolucoes.com.br/moara): o que é, canais, preço, limites e números.
+- [Concierge hospitalar digital](https://www.amikosolucoes.com.br/concierge-hospitalar): como funciona no hospital.
+- [Atendimento beira-leito com IA](https://www.amikosolucoes.com.br/atendimento-beira-leito): o que é e o que os pacientes pedem do leito.
+- [Chamada de enfermagem: comparativo](https://www.amikosolucoes.com.br/chamada-de-enfermagem): campainha tradicional × aplicativo × assistente virtual.
+- [Concierge virtual](https://www.amikosolucoes.com.br/concierge-virtual): hospitais, eventos (HackTown) e residências.
+- [MOARA Home](https://www.amikosolucoes.com.br/moara-home): a concierge da casa no WhatsApp.
+- [Cases e resultados](https://www.amikosolucoes.com.br/resultados): Santa Casa de Passos, Hospital São Lucas e HackTown 2026.
+- [Sobre a Amiko](https://www.amikosolucoes.com.br/sobre-nos)
+
+## Artigos
+
+- [O que é concierge hospitalar digital](https://www.amikosolucoes.com.br/blog/o-que-e-concierge-hospitalar-digital)
+- [O que os pacientes pedem durante a internação: 522 solicitações](https://www.amikosolucoes.com.br/blog/o-que-pacientes-pedem-no-leito)
+- [WhatsApp para pacientes internados](https://www.amikosolucoes.com.br/blog/whatsapp-para-pacientes-internados)
+- [Como escolher um concierge hospitalar digital](https://www.amikosolucoes.com.br/blog/como-escolher-concierge-hospitalar-digital)
+- [Assistente virtual hospitalar: o que é e limites](https://www.amikosolucoes.com.br/blog/assistente-virtual-hospitalar)
+- [Hotelaria hospitalar: pedidos dos pacientes](https://www.amikosolucoes.com.br/blog/hotelaria-hospitalar-pedidos-de-pacientes)
+- [Concierge virtual em eventos: HackTown 2026](https://www.amikosolucoes.com.br/blog/concierge-virtual-para-eventos-hacktown)
+- [5 formas de reduzir chamados desnecessários para a enfermagem](https://www.amikosolucoes.com.br/blog/reduzir-chamados-desnecessarios-enfermagem)
+- [Como medir o tempo de resposta hospitalar](https://www.amikosolucoes.com.br/blog/como-medir-tempo-resposta-hospitalar)

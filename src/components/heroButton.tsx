@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 
 export function HeroButton (){
   const phoneNumber = '5535999968808'; // Substitua pelo seu número de WhatsApp
-  const message = 'Gostaria de saber mais sobre a Amiko Soluções!'; // Mensagem padrão
+  const message = 'Olá! Gostaria de agendar uma demonstração da MOARA.'; // Mensagem padrão
 
   const handleClick = () => {
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;

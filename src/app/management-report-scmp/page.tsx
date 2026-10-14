@@ -1,6 +1,14 @@
 import { WhatsAppButton } from "@/components/whatsappButton";
-import Header from "@/pages/header";
-import ManagementSectionSCMP from "@/pages/managament-report-scmp";
+import Header from "@/sections/header";
+import ManagementSectionSCMP from "@/sections/managament-report-scmp";
+import { pageMetadata } from "@/lib/site";
+
+export const metadata = pageMetadata({
+  title: "Relatório gerencial SCMP",
+  description: "Relatório gerencial de uso da MOARA na Santa Casa de Passos.",
+  path: "/management-report-scmp",
+  noindex: true,
+});
 
 export default function ManagementSCMP() {
   return (

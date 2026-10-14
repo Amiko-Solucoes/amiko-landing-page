@@ -1,15 +1,14 @@
 import { WhatsAppButton } from "@/components/whatsappButton";
-import Header from "@/pages/header";
-import Contact from "@/pages/contact";
-import Footer from "@/pages/footer";
+import Header from "@/sections/header";
+import Contact from "@/sections/contact";
+import Footer from "@/sections/footer";
+import { pageMetadata } from "@/lib/site";
 
-export const metadata = {
-  title: "Contato | Amiko Soluções",
-  description: "Fale com a Amiko Soluções e solicite uma demonstração da MOARA, do SIMOH ou do SOTEH para o seu hospital.",
-  alternates: {
-    canonical: "/contato",
-  },
-};
+export const metadata = pageMetadata({
+  title: "Contato: agende uma demonstração da MOARA",
+  description: "Fale com a Amiko Soluções e agende uma demonstração da MOARA, concierge hospitalar digital e assistente virtual beira-leito. E-mail contato@amikosolucoes.com, WhatsApp +55 35 99996-8808.",
+  path: "/contato",
+});
 export default function ContactPage() {
   return (
     <div className="flex flex-col items-center justify-center bg-white ">
@@ -18,7 +17,7 @@ export default function ContactPage() {
           <Header />
         </div>
         <div className="pt-24 flex-1 w-full">
-        <h1 className="sr-only">Contato | Amiko Soluções</h1>
+        <h1 className="sr-only">Fale com a Amiko Soluções e agende uma demonstração da MOARA</h1>
         <Contact />
         <WhatsAppButton />
         <Footer />

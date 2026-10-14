@@ -8,6 +8,17 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 
+const MOBILE_ITEMS = [
+  { href: "/", label: "Início" },
+  { href: "/moara", label: "MOARA" },
+  { href: "/atendimento-beira-leito", label: "Atendimento beira-leito" },
+  { href: "/concierge-virtual", label: "Concierge virtual" },
+  { href: "/resultados", label: "Cases" },
+  { href: "/blog", label: "Blog" },
+  { href: "/sobre-nos", label: "Sobre nós" },
+  { href: "/contato", label: "Contato" },
+]
+
 export function MobileMenu (){
   return (
     <Sheet>
@@ -24,13 +35,10 @@ export function MobileMenu (){
         <SheetHeader>
           <SheetTitle>Menu</SheetTitle>
         </SheetHeader>
-        <div className="text-sky-700 font-poppins flex flex-col justify-center items-center gap-10 h-full py-10 text-xl">
-          <a href="/#hero" className="hover:text-sky-500">Home</a>
-          <a href="/#aboutUs" className="hover:text-sky-500">Sobre nós</a>
-          <a href="/#services" className="hover:text-sky-500">Serviços</a>
-          <a href="/#partners" className="hover:text-sky-500">Parceiros</a>
-          <a href="/#feedbacks" className="hover:text-sky-500">Depoimentos</a>
-          <a href="/#contact" className="hover:text-sky-500">Contato</a>
+        <div className="text-sky-700 font-poppins flex flex-col justify-center items-center gap-7 h-full py-10 text-xl text-center">
+          {MOBILE_ITEMS.map((item) => (
+            <a key={item.href} href={item.href} className="hover:text-sky-500">{item.label}</a>
+          ))}
         </div>
       </SheetContent>
     </Sheet>

@@ -1,20 +1,19 @@
 import Image from "next/image";
-import Header from "@/pages/header";
-import Footer from "@/pages/footer";
+import Header from "@/sections/header";
+import Footer from "@/sections/footer";
 import { WhatsAppButton } from "@/components/whatsappButton";
+import { PASSOS, pageMetadata } from "@/lib/site";
 
-export const metadata = {
-  title: "Automação Hospitalar: Eficiência Operacional | Amiko Soluções",
-  description: "Como a automação com inteligência artificial reduz sobrecarga da enfermagem, organiza solicitações e gera indicadores para a gestão hospitalar tomar decisões melhores.",
-  alternates: {
-    canonical: "/automacao-hospitalar",
-  },
-};
+export const metadata = pageMetadata({
+  title: "Automação hospitalar e eficiência operacional com IA",
+  description: "Como a automação com inteligência artificial reduz a sobrecarga da enfermagem, organiza as solicitações dos pacientes e gera indicadores para a gestão hospitalar.",
+  path: "/automacao-hospitalar",
+});
 
 const faqs = [
   {
     q: "Como reduzir chamadas desnecessárias para a enfermagem?",
-    a: "Dando ao paciente um canal claro para cada tipo de solicitação, para que pedidos de hotelaria, manutenção ou informação não precisem passar pela enfermagem antes de chegar ao setor certo. Isso é feito automaticamente por uma camada de triagem com inteligência artificial, como a MOARA.",
+    a: "Dando ao paciente um canal claro para cada tipo de solicitação, para que pedidos de hotelaria, manutenção ou informação não precisem passar pela enfermagem antes de chegar ao setor certo. Isso é feito automaticamente por uma camada de triagem com inteligência artificial, como a MOARA. Na Santa Casa de Passos, 71,8% das interações deixaram de passar pela enfermagem.",
   },
   {
     q: "Como organizar solicitações de pacientes?",
@@ -94,10 +93,10 @@ export default function AutomacaoHospitalarPage() {
             <div className="max-w-[900px] mx-auto px-6 flex flex-col gap-4 text-white">
               <div className="flex items-center gap-3 flex-wrap">
                 <h2 className="text-2xl font-bold">O impacto de direcionar cada chamado certo</h2>
-                <span className="w-fit text-sm font-bold text-sky-900 bg-white px-3 py-1 rounded-full">85% de otimização média</span>
+                <span className="w-fit text-sm font-bold text-sky-900 bg-white px-3 py-1 rounded-full">{PASSOS.semPassarPelaEnfermagem} sem passar pela enfermagem</span>
               </div>
               <p className="text-sky-100">
-                No piloto realizado na Santa Casa de Misericórdia de Passos (MG), entre agosto de 2024 e abril de 2025, dos 733 chamados registrados, 36,8% eram de enfermagem e 23,9% de hotelaria. Em determinados cenários observados, houve redução próxima de 70% em demandas simples que antes chegavam às equipes de forma desnecessária ou indireta.
+                No piloto na {PASSOS.hospital}, entre {PASSOS.periodo}, a MOARA registrou {PASSOS.chamados} solicitações: {PASSOS.sistema} foram resolvidas pela própria assistente, {PASSOS.hotelaria} foram para hotelaria, {PASSOS.assistencial} para apoio assistencial e {PASSOS.enfermagem} para enfermagem. No total, {PASSOS.semPassarPelaEnfermagem} das interações deixaram de ser intermediadas pela enfermagem.
               </p>
               <p className="text-sky-200 text-sm">
                 Números referentes a esse piloto específico, com metodologia e período definidos — não representam garantia de resultado para qualquer hospital.
@@ -122,6 +121,7 @@ export default function AutomacaoHospitalarPage() {
             <h2 className="text-lg font-bold text-sky-900">Veja também</h2>
             <div className="flex flex-wrap gap-4 text-sky-700 underline">
               <a href="/concierge-hospitalar">Concierge hospitalar digital: MOARA</a>
+              <a href="/chamada-de-enfermagem">Chamada de enfermagem: comparativo</a>
               <a href="/experiencia-do-paciente">Experiência do paciente em hospitais</a>
               <a href="/solucoes-hospitalares">Todas as soluções da Amiko</a>
               <a href="/blog/reduzir-chamados-desnecessarios-enfermagem">5 formas de reduzir chamados para a enfermagem</a>

@@ -19,16 +19,22 @@ const nextConfig: NextConfig = {
       { source: "/tecnologia-em-saude", destination: "/solucoes-hospitalares", permanent },
       { source: "/industria-brasileira-hospitalar", destination: "/solucoes-hospitalares", permanent },
 
-      // Cluster "Concierge/Moara" -> pilar de produto
-      { source: "/concierge-virtual", destination: "/concierge-hospitalar", permanent },
+      // Cluster "Concierge/Moara"
       { source: "/concierge-virtual-hospitalar", destination: "/concierge-hospitalar", permanent },
-      { source: "/moara-assistente", destination: "/concierge-hospitalar", permanent },
-      { source: "/moara-digital", destination: "/concierge-hospitalar", permanent },
-      { source: "/moara-concierge", destination: "/concierge-hospitalar", permanent },
-      { source: "/assistente-virtual", destination: "/concierge-hospitalar", permanent },
-      { source: "/assistente-beira-leito", destination: "/concierge-hospitalar", permanent },
-      { source: "/assistente-hospitalar", destination: "/concierge-hospitalar", permanent },
-      { source: "/alexa-para-hospitais", destination: "/concierge-hospitalar", permanent },
+      { source: "/moara-assistente", destination: "/moara", permanent },
+      { source: "/moara-digital", destination: "/moara", permanent },
+      { source: "/moara-concierge", destination: "/moara", permanent },
+      { source: "/assistente-virtual", destination: "/moara", permanent },
+      { source: "/assistente-hospitalar", destination: "/moara", permanent },
+      { source: "/alexa-para-hospitais", destination: "/moara", permanent },
+
+      // Cluster "Atendimento beira-leito / chamada de enfermagem"
+      { source: "/assistente-beira-leito", destination: "/atendimento-beira-leito", permanent },
+      { source: "/assistente-virtual-beira-leito", destination: "/atendimento-beira-leito", permanent },
+      { source: "/beira-leito", destination: "/atendimento-beira-leito", permanent },
+      { source: "/chamadas-de-enfermagem", destination: "/chamada-de-enfermagem", permanent },
+      { source: "/campainha-de-enfermagem", destination: "/chamada-de-enfermagem", permanent },
+      { source: "/campainha-hospitalar", destination: "/chamada-de-enfermagem", permanent },
 
       // Cluster "Experiência do Paciente" -> pilar de experiência do paciente
       { source: "/atendimento-ao-paciente", destination: "/experiencia-do-paciente", permanent },
@@ -39,7 +45,6 @@ const nextConfig: NextConfig = {
       // Cluster "Automação/Eficiência Operacional" -> pilar de automação hospitalar
       { source: "/gestao-hospitalar", destination: "/automacao-hospitalar", permanent },
       { source: "/eficiencia-enfermagem", destination: "/automacao-hospitalar", permanent },
-      { source: "/chamadas-de-enfermagem", destination: "/automacao-hospitalar", permanent },
       { source: "/comunicacao-hospitalar", destination: "/automacao-hospitalar", permanent },
       { source: "/hospitais-digitais", destination: "/automacao-hospitalar", permanent },
       { source: "/apoio-certificacao-ona", destination: "/automacao-hospitalar", permanent },
@@ -50,6 +55,16 @@ const nextConfig: NextConfig = {
       { source: "/contact-page", destination: "/contato", permanent },
       { source: "/partners-testimonials", destination: "/parceiros-e-depoimentos", permanent },
       { source: "/monitoramente-em-tempo-real", destination: "/automacao-hospitalar", permanent },
+
+      // Componentes que antes ficavam em src/pages e viravam rotas soltas
+      { source: "/aboutUs", destination: "/sobre-nos", permanent },
+      { source: "/contact", destination: "/contato", permanent },
+      { source: "/services", destination: "/solucoes-hospitalares", permanent },
+      { source: "/partners", destination: "/parceiros-e-depoimentos", permanent },
+      { source: "/feedbacks", destination: "/parceiros-e-depoimentos", permanent },
+      { source: "/hero", destination: "/", permanent },
+      { source: "/header", destination: "/", permanent },
+      { source: "/footer", destination: "/", permanent },
     ];
   },
 }

@@ -1,6 +1,14 @@
 import { WhatsAppButton } from "@/components/whatsappButton";
-import FeedbackRedirect from "@/pages/feedbackRedirect";
-import Header from "@/pages/header";
+import FeedbackRedirect from "@/sections/feedbackRedirect";
+import Header from "@/sections/header";
+import { pageMetadata } from "@/lib/site";
+
+export const metadata = pageMetadata({
+  title: "Sugestões e feedbacks",
+  description: "Envie sugestões e feedbacks para a Amiko Soluções.",
+  path: "/report",
+  noindex: true,
+});
 
 export default function Report() {
   return (

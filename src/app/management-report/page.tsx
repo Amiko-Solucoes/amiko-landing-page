@@ -1,6 +1,14 @@
 import { WhatsAppButton } from "@/components/whatsappButton";
-import Header from "@/pages/header";
-import ManagementSection from "@/pages/managament-report";
+import Header from "@/sections/header";
+import ManagementSection from "@/sections/managament-report";
+import { pageMetadata } from "@/lib/site";
+
+export const metadata = pageMetadata({
+  title: "Relatório gerencial",
+  description: "Relatório gerencial de uso da MOARA.",
+  path: "/management-report",
+  noindex: true,
+});
 
 export default function Management() {
   return (

@@ -1,15 +1,14 @@
-import Header from "@/pages/header";
-import Footer from "@/pages/footer";
+import Header from "@/sections/header";
+import Footer from "@/sections/footer";
 import { WhatsAppButton } from "@/components/whatsappButton";
 import { blogPosts } from "@/data/blogPosts";
+import { pageMetadata } from "@/lib/site";
 
-export const metadata = {
-  title: "Blog | Amiko Soluções",
-  description: "Conteúdo sobre concierge hospitalar, experiência do paciente e eficiência operacional para hospitais brasileiros.",
-  alternates: {
-    canonical: "/blog",
-  },
-};
+export const metadata = pageMetadata({
+  title: "Blog sobre concierge hospitalar e atendimento beira-leito",
+  description: "Artigos práticos sobre concierge hospitalar digital, atendimento beira-leito, chamada de enfermagem e experiência do paciente, com dados reais de hospitais brasileiros.",
+  path: "/blog",
+});
 
 export default function BlogIndexPage() {
   return (
@@ -21,9 +20,9 @@ export default function BlogIndexPage() {
 
         <div className="pt-24 w-full flex flex-col items-center">
           <section className="w-full max-w-[900px] px-6 py-12 flex flex-col gap-3">
-            <h1 className="text-sky-900 text-4xl font-bold">Blog da Amiko</h1>
+            <h1 className="text-sky-900 text-4xl font-bold">Blog da Amiko: concierge hospitalar e atendimento beira-leito</h1>
             <p className="text-lg text-zinc-700">
-              Conteúdo prático sobre concierge hospitalar, experiência do paciente e eficiência operacional, baseado na atuação real da Amiko em hospitais brasileiros.
+              Conteúdo prático sobre concierge hospitalar digital, atendimento beira-leito, chamada de enfermagem e experiência do paciente, baseado em dados reais da MOARA em hospitais e eventos brasileiros.
             </p>
           </section>
 

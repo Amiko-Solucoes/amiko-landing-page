@@ -1,15 +1,14 @@
 import { WhatsAppButton } from "@/components/whatsappButton";
-import AboutUs from "@/pages/aboutUs";
-import Header from "@/pages/header";
-import Footer from "@/pages/footer";
+import AboutUs from "@/sections/aboutUs";
+import Header from "@/sections/header";
+import Footer from "@/sections/footer";
+import { AMIKO_ONE_LINER, ORG_ID, SITE_URL, pageMetadata } from "@/lib/site";
 
-export const metadata = {
-  title: "Sobre a Amiko Soluções | Healthtech de Santa Rita do Sapucaí",
-  description: "Conheça a Amiko Soluções: healthtech nascida no INATEL que desenvolve tecnologia aplicada para melhorar a experiência do paciente e a eficiência de hospitais brasileiros.",
-  alternates: {
-    canonical: "/sobre-nos",
-  },
-};
+export const metadata = pageMetadata({
+  title: "Sobre a Amiko Soluções, healthtech criadora da MOARA",
+  description: "Conheça a Amiko Soluções: healthtech nascida na incubadora do INATEL, em Santa Rita do Sapucaí (MG), criadora da MOARA, concierge hospitalar digital com inteligência artificial.",
+  path: "/sobre-nos",
+});
 
 export default function AboutUsPage() {
   return (
@@ -21,6 +20,18 @@ export default function AboutUsPage() {
         <div className="pt-24 w-full">
         <h1 className="sr-only">Sobre a Amiko Soluções</h1>
         <AboutUs />
+
+        <section className="w-full max-w-[900px] mx-auto px-6 pt-14 flex flex-col gap-3">
+          <h2 className="text-2xl font-bold text-sky-900">A Amiko em uma frase</h2>
+          <p className="text-zinc-700">{AMIKO_ONE_LINER}</p>
+          <p className="text-zinc-700">
+            Além dos hospitais, a tecnologia da MOARA também é usada como{" "}
+            <a href="/concierge-virtual" className="text-sky-700 underline">concierge virtual em eventos</a>, como no HackTown
+            2026, e em automação residencial, com a MOARA Home. Conheça a{" "}
+            <a href="/moara" className="text-sky-700 underline">ficha técnica da MOARA</a> e os{" "}
+            <a href="/resultados" className="text-sky-700 underline">cases</a>.
+          </p>
+        </section>
 
         <section className="w-full max-w-[900px] mx-auto px-6 py-14 flex flex-col gap-3">
           <h2 className="text-2xl font-bold text-sky-900">Sobre o fundador</h2>
@@ -48,11 +59,9 @@ export default function AboutUsPage() {
             "@type": "Person",
             name: "Roberto Luiz Assad Pinheiro",
             jobTitle: "Fundador e CEO",
-            worksFor: {
-              "@type": "Organization",
-              name: "Amiko Soluções",
-              url: "https://www.amikosolucoes.com.br",
-            },
+            "@id": `${SITE_URL}/sobre-nos#roberto`,
+            url: `${SITE_URL}/sobre-nos`,
+            worksFor: { "@id": ORG_ID },
             alumniOf: {
               "@type": "CollegeOrUniversity",
               name: "INATEL - Instituto Nacional de Telecomunicações",

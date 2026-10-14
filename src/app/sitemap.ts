@@ -19,7 +19,7 @@ const pages: { path: string; lastModified: string; priority: number; changeFrequ
   { path: "/parceiros-e-depoimentos", lastModified: "2026-10-11", priority: 0.6, changeFrequency: "monthly" },
   { path: "/contato", lastModified: "2026-10-11", priority: 0.6, changeFrequency: "yearly" },
   { path: "/blog", lastModified: "2026-10-11", priority: 0.7, changeFrequency: "weekly" },
-  { path: "/privacy", lastModified: "2025-01-01", priority: 0.2, changeFrequency: "yearly" },
+  { path: "/privacy", lastModified: "2026-10-14", priority: 0.2, changeFrequency: "yearly" },
   { path: "/terms", lastModified: "2025-01-01", priority: 0.2, changeFrequency: "yearly" },
 ];
 

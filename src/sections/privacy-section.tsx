@@ -6,7 +6,7 @@ export default function PrivacySection() {
       </div>
       <div className="min-h-screen bg-about_bg bg-cover bg-center bg-no-repeat px-6 py-10 text-left text-sky-900 sm:px-8">
         <article className="mx-auto max-w-4xl space-y-4 break-words leading-relaxed [&_h2]:!mt-10 [&_h2]:text-2xl [&_h2]:font-bold [&_h3]:!mt-6 [&_h3]:text-xl [&_h3]:font-semibold [&_ul]:list-disc [&_ul]:space-y-2 [&_ul]:pl-6 [&_a]:underline [&_a]:underline-offset-4 hover:[&_a]:text-sky-700">
-          <p><strong>Última atualização: 14 de outubro de 2026</strong></p>
+          <p><strong>Última atualização: 16 de novembro de 2026</strong></p>
 
           <p>A <strong>AMIKO SOLUÇÕES EM TECNOLOGIA LTDA.</strong>, inscrita no CNPJ sob o nº <strong>44.926.803/0001-47</strong>, doravante denominada <strong>“Amiko”</strong>, valoriza a privacidade, a proteção de dados pessoais e a segurança das informações utilizadas em seus serviços.</p>
 
@@ -24,7 +24,7 @@ export default function PrivacySection() {
 
           <p><strong>Site:</strong> <a href="https://www.amikosolucoes.com">https://www.amikosolucoes.com</a></p>
 
-          <p><strong>Contato para assuntos de privacidade:</strong> <a href="mailto:lgpd@amikosolucoes.com">lgpd@amikosolucoes.com</a></p>
+          <p><strong>Encarregado pelo tratamento de dados pessoais (DPO):</strong> Lucca Bonifácio Roder, nomeado pela Amiko Soluções em 15 de dezembro de 2022. Contato: <a href="mailto:lgpd@amikosolucoes.com">lgpd@amikosolucoes.com</a>.</p>
 
           <p>A Amiko é uma empresa brasileira de tecnologia dedicada ao desenvolvimento de soluções de atendimento inteligente, conectividade e automação, com aplicações em hospitais, eventos, residências e outros ambientes.</p>
 
